@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+    background: rgb(78, 83, 89) url(/static/images/bg_universal.png) repeat 0 0;
+    color: rgb(102, 102, 102);
+    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+
+
+.chatPanel {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0 30px 0;
+    width: 962px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.chatPanel .list {
+    position: relative;
+    float: left;
+    width: 276px;
+    border-radius: 6px;
+    z-index: 99;
+    border: 1px solid rgb(66, 68, 72);
+    box-shadow: 0 2px 6px rgb(49, 49, 49);
+}
+
+.chatPanel .chat {
+    margin-left: 312px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgb(49, 49, 49);
+    z-index: 20;
+    _height: 400px;
+}
+.lightBorder {
+    border-color: rgb(221, 221, 221);
+}
+
+.chatPanel .chatContainer {
+    background: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 2px 2px 6px 6px;
+    -webkit-border-radius: 2px 2px 6px 6px;
+    -moz-border-radius: 2px 2px 6px 6px;
+    border: 1px solid rgb(66, 68, 72);
+    border: 1px solid rgb(226, 226, 226);
+    _height: 400px;
+    overflow: hidden;
+}
+
+.chatPanel .chatTitle {
+    height: 40px;
+    border-top: 1px solid rgb(155, 163, 174);
+    border-bottom: 1px solid rgb(51, 51, 51);
+    background: url(../images/bg_top.png) 0px 0px repeat-x rgba(0, 0, 0, 0);
+    background-color: rgb(107, 120, 136);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(107, 120, 136)),to(rgb(84, 94, 106)), color-stop(0.1,rgb(106, 119, 134)),color-stop(0.5,rgb(94, 105, 119)),color-stop(0.9,rgb(86, 97, 109)),color-stop(1.0,rgb(84, 94, 106)));
+    background-image: -moz-linear-gradient(top, #6A7786 10%, #5E6977 50%, #56616D 90%, #545E6A 100%);
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+}
+
+.chatPanel .chatScorll {
+    height: 390px;
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    background-color: rgb(239, 243, 247);
+}
+
+.chatPanel .chatOperator {
+    position: relative;
+    text-align: left;
+    border-top: 1px solid rgb(128, 131, 132);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background-color: rgb(234, 236, 238);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(248, 249, 250)), to(rgb(218, 221, 223)));
+    background: -moz-linear-gradient(top, #F8F9FA, #DADDDF);
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    color: rgb(56, 62, 69);
+    height: 55px;
+}
+
+.chatPanel .inputArea {
+    padding: 14px 10px 0 5px;
+    height: 43px;
+}
+
+.chatPanel .chatInput {
+    float: right;
+    width: 403px;
+    width: 400px\9;
+    height: 20px;
+    margin: 0 10px 0 10px;
+    padding: 7px 10px 2px;
+    outline: none;
+    box-shadow: 1px 1px 2px rgb(187, 187, 187) inset;
+    background: rgb(238, 238, 238);
+    background: #fafafa\9;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border: 1px solid #ccc\9;
+    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
+    line-height: 1.2em;
+    resize: none;
+}
+
+a.chatSend {
+    display: block;
+    float: right;
+    height: 28px;
+    width: 80px;
+    margin: 0px 1px 1px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(41, 68, 126);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 0 1px 3px rgb(217, 217, 217);
+    text-shadow: 0 1px 1px rgb(68, 68, 68);
+    background: rgb(72, 108, 180);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(96, 120, 170)),to(rgb(70, 92, 140)), color-stop(0.1,rgb(94, 118, 167)),color-stop(0.5,rgb(84, 107, 156)),color-stop(0.9,rgb(73, 95, 143)),color-stop(1.0,rgb(70, 92, 140)));
+    background-image: -moz-linear-gradient(top, #5E76A7 10%, #546B9C 50%, #495F8F 90%, #465C8C 100%);
+}
+
+a.chatSend b {
+    display: block;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 28px;
+    border-top: 1px solid rgb(123, 143, 184);
+    text-shadow: 0 -1px 0 rgb(79, 115, 159);
+    text-align: center;
+    }
+
+.lightBorder {
+    border-color: rgb(221, 221, 221);
+}
+
+#vernierContainer{
+    width: 32px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-top: 135px;
+    visibility: visible;
+    height: 42px;
+}

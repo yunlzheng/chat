@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tornado WebSocket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/static/jquery.js"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+        <div id="chat" class="chatPanel normalPanel">
+            <div class="content">
+                <div id="chat_leftpanel" class="list" style="height:400px">
+                </div>
+                <div id="vernierContainer" style="width: 32px; position: relative; float: left; overflow: hidden; margin-top: 135px; visibility: visible; height: 42px;">
+                    <div class="activeChatVernier" style="top: -347.5px;"><img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" onerror="reLoadImg(this)"></div>
+                </div>
+                <div class="chat lightBorder" style="visibility: visible;height:400px">
+                    <div class="chatContainer">
+                        <div class="chatTitle"></div>
+                        <div class="chatScorll"></div>
+                        <div id="chat_editor" class="chatOperator lightBorder">
+                            <div class="inputArea">
+                                <a href="javascript:;" class="chatSend" click="sendMsg@.inputArea"><b>发送</b></a>
+                                <textarea type="text" id="textInput" class="chatInput lightBorder"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul>
+      <h2>Tornado WebSocket Sample</h2>
+      <div id="message"></div>
+      <form id="subform">
+          <textarea id="data" name="message"></textarea>
+          <input type="submit" value="发送"/>
+      </form>
+    </ul>
+
+    <script type="text/javascript">
+        $(function(){
+
+            $('#subform').submit(function(event){
+                var value = $('#data').val();
+                $.post("./", { data: value }, function(data){
+                    $("#data").val('');
+                });
+                return false;
+            });
+
+            if ("WebSocket" in window) {
+
+                var ws = new WebSocket('ws://localhost:8888/websocket')
+
+                ws.onmessage = function(event){
+                    $("#message").append("<div>"+event.data+"</div>");
+                }
+
+            } else {
+
+              alert("WebSocket not supported");
+
+            }
+
+
+
+        });
+    </script>
+  </body>
+</html>

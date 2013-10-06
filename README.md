@@ -1,4 +1,4 @@
 chat
 ====
 
-tornado websocket chat application
+基于tornado websocket的web聊天应用

@@ -1,11 +1,13 @@
 # coding: utf-8
 import os
-import os.path
+import json
 import threading
 import redis
 import tornado.web
 import tornado.websocket
 import tornado.ioloop
+
+from chat.util import getAvatar
 
 __author__ = 'zheng'
 
@@ -18,10 +20,12 @@ CHANNEL = "WEBSOCKET"
 
 class Client():
 
-    def __init__(self, id, nickname="匿名", webSocketHandler=None):
+    def __init__(self, id, nickname="匿名", email='', webSocketHandler=None):
         self.id = id
         self.webSocketHandler = webSocketHandler
         self.nickname = nickname
+        self.email = email
+        self.avatar = getAvatar(self.email)
 
 class Listener(threading.Thread):
 
@@ -33,7 +37,6 @@ class Listener(threading.Thread):
 
     def work(self, item):
         print item
-        print item['channel'], ":", item['data']
         for key in CLIENTS_MAP.keys():
             CLIENTS_MAP[key].webSocketHandler.write_message(item['data'])
 
@@ -46,24 +49,56 @@ class Listener(threading.Thread):
             else:
                 self.work(item)
 
-class MainHandler(tornado.web.RequestHandler):
+class BaseHandler(tornado.web.RequestHandler):
+
+    def get_current_user(self):
+        return self.get_secure_cookie("email")
+
+
+class AuthHandler(BaseHandler):
 
     def get(self):
-        self.render("index.html", clients = CLIENTS_MAP)
+        self.render("login.html")
 
     def post(self):
-        data = self.get_argument("data")
+        nickname = self.get_argument("nickname")
+        email = self.get_argument("email")
+        self.set_secure_cookie('email',email)
+        self.set_secure_cookie('nickname', nickname)
+        self.redirect("/chat")
+
+class MainHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        email = self.get_secure_cookie('email')
+        self.render("index.html", clients = CLIENTS_MAP, email=email)
+
+    @tornado.web.authenticated
+    def post(self):
+        message = self.get_argument("data")
+        data = {
+            "email":self.get_secure_cookie('email'),
+            "nickname":self.get_secure_cookie('nickname'),
+            "avatar":getAvatar(self.get_secure_cookie('email')),
+            "message":message,
+            "type":"normal"
+        }
         r = self.settings['redis']
-        r.publish(CHANNEL, str(id(self))+":"+data)
+        r.publish(CHANNEL, json.dumps(data))
 
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
     def open(self):
         _id = str(id(self))
-        client = Client(_id, webSocketHandler=self)
-
+        kwags = {
+            "webSocketHandler": self,
+            "email": self.get_secure_cookie('email'),
+            "nickname": self.get_secure_cookie('nickname')
+        }
+        client = Client(_id, **kwags)
         CLIENTS_MAP[_id] = client
-        self.write_message("欢迎进入聊天室！")
+        #self.write_message("欢迎进入聊天室！")
 
     def send_to_all(self, message):
         r = self.settings['redis']
@@ -83,12 +118,14 @@ if __name__ == '__main__':
     settings = dict(
         template_path=TEMPLATE_DIR,
         static_path= STATIC_DIR,
-        login_url="/sigin",
+        login_url="/",
         debug=True,
-        redis=r
+        redis=r,
+        cookie_secret="123456"
     )
     application = tornado.web.Application([
-        (r"/", MainHandler),
+        (r"/", AuthHandler),
+        (r"/chat", MainHandler),
         (r'/websocket', WebSocketHandler)
     ], **settings)
 

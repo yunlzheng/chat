@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tornado WebSocket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/static/jquery.js"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loginContainer">
+      <div class="main">
+        <div class="loginPanel">
+            <div class="enlogoTitle title pngBackground">
+                <h1>Tornado Chat</h1>
+            </div>
+            <div class="panelContent">
+                <form method="post">
+                    <button type="submit">进入</button>
+                    <input name="nickname" type="text" placeholder="昵称"/>
+                    <input name="email" type="email" placeholder="邮箱地址"/>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+    $(function(){
+        $("form").submit(function(){
+
+            return true;
+
+        });
+    });
+
+
+    </script>
+  </body>
+</html>

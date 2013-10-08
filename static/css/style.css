@@ -86,6 +86,77 @@ html, body {
     background-color: rgb(239, 243, 247);
 }
 
+.chatPanel .chatScorll .chatItem {
+
+    margin: 5px;
+    width: 100%;
+    clear: both;
+
+}
+
+.chatPanel .chatScorll .chatItem .avatar{
+
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc\9;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 1px 0px rgb(179, 182, 186);
+    float: right;
+    margin-right: 10px;
+
+}
+
+.chatPanel .chatScorll .chatItem .content{
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 1px 0px rgb(213, 213, 213);
+    border: 1px solid #9f9f9f\9;
+    background: #ECECEC\9;
+    border-radius: 6px\9;
+    margin-left: 8px;
+    position: relative;
+    float: right;
+    min-width: 50px;
+    max-width: 300px;
+    margin: 0 15px 0 0;
+    padding: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+
+
+.chatPanel .chatScorll .you .avatar{
+    float:left;
+}
+
+.chatPanel .chatScorll .you .content{
+    float:left;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(122, 162, 63);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 1px 0px rgb(219, 219, 219);
+    border: 1px solid #73972a\9;
+    border-radius: 6px\9;
+    background-color: rgb(178, 207, 115);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(196, 222, 148)),to(rgb(164, 195, 99)), color-stop(0.1,rgb(180, 209, 116)),color-stop(0.2,rgb(178, 207, 115)), color-stop(0.3,rgb(178, 207, 115)), color-stop(0.4,rgb(178, 207, 115)), color-stop(0.5,rgb(178, 207, 115)),color-stop(0.6,rgb(175, 204, 116)), color-stop(0.7,rgb(171, 202, 108)),color-stop(0.8,rgb(174, 202, 114)), color-stop(0.9,rgb(169, 197, 114)),color-stop(1.0,rgb(164, 195, 99)));
+    background-image: -moz-linear-gradient(top, #B4D174 10%, #B2CF7320%, #B2CF73 30%, #B2CF73 40%, #B2CF73 50%, #AFCC74 60%, #ABCA6C70%, #A9C572 80%, #AECA72 90%, #A4C363 100%);
+}
+
+
 .chatPanel .chatOperator {
     position: relative;
     text-align: left;
@@ -169,3 +240,80 @@ a.chatSend b {
     visibility: visible;
     height: 42px;
 }
+
+/**Login Page Style*/
+#loginContainer{
+    height: 100%;
+    width: 100%;
+    text-shadow: 0 1px 1px rgb(51, 51, 51);
+}
+
+#loginContainer .loginPanel {
+    position: absolute;
+    left: 400px;
+    width: 500px;
+    height: 380px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    margin: 0 auto;
+    padding: 200px 0 0;
+    text-align: center;
+    position: static;
+}
+
+#loginContainer .loginPanel .enlogoTitle {
+    margin-bottom: 20px;
+}
+
+#loginContainer .loginPanel .enlogoTitle h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#loginContainer .loginPanel input{
+    float: right;
+
+    height: 20px;
+    margin: 0 10px 0 10px;
+    padding: 7px 10px 2px;
+    outline: none;
+    box-shadow: 1px 1px 2px rgb(187, 187, 187) inset;
+    background: rgb(238, 238, 238);
+    background: #fafafa\9;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border: 1px solid #ccc\9;
+    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
+    line-height: 1.2em;
+    resize: none;
+}
+
+#loginContainer .loginPanel button{
+    float: right;
+    font-size: 14px;
+    line-height: 28px;
+    border-top: 1px solid rgb(123, 143, 184);
+    text-shadow: 0 -1px 0 rgb(79, 115, 159);
+    text-align: center;
+    display: block;
+    float: right;
+    height: 28px;
+    width: 80px;
+    margin: 0px 1px 1px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(41, 68, 126);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 0 1px 3px rgb(217, 217, 217);
+    text-shadow: 0 1px 1px rgb(68, 68, 68);
+    background: rgb(72, 108, 180);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(96, 120, 170)),to(rgb(70, 92, 140)), color-stop(0.1,rgb(94, 118, 167)),color-stop(0.5,rgb(84, 107, 156)),color-stop(0.9,rgb(73, 95, 143)),color-stop(1.0,rgb(70, 92, 140)));
+    background-image: -moz-linear-gradient(top, #5E76A7 10%, #546B9C 50%, #495F8F 90%, #465C8C 100%);
+}
+

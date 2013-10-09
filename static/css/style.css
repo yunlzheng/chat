@@ -2,8 +2,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -37,6 +35,48 @@ html, body {
     box-shadow: 0 2px 6px rgb(49, 49, 49);
 }
 
+.chatPanel .top{
+
+
+
+}
+
+.chatPanel .top .title{
+
+    height: 40px;
+    border-top: 1px solid rgb(155, 163, 174);
+    border-bottom: 1px solid rgb(51, 51, 51);
+    background-image: -moz-linear-gradient(top, #6A7786 10%, #5E6977 50%, #56616D 90%, #545E6A 100%);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(107, 120, 136)),to(rgb(84, 94, 106)), color-stop(0.1,rgb(106, 119, 134)),color-stop(0.5,rgb(94, 105, 119)),color-stop(0.9,rgb(86, 97, 109)),color-stop(1.0,rgb(84, 94, 106)));
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+
+}
+
+.chatPanel .top .myProfile{
+
+
+}
+
+.chatPanel .top .myProfile .info{
+    color:#fff;
+    font-weight: bold;
+    float: left;
+    margin-left: 60px;
+}
+
+.chatPanel .top .myProfile img{
+    border-radius: 500px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    border: 2px solid #DDD;
+}
+
 .chatPanel .chat {
     margin-left: 312px;
     border-radius: 6px;
@@ -54,8 +94,6 @@ html, body {
     border-radius: 2px 2px 6px 6px;
     -webkit-border-radius: 2px 2px 6px 6px;
     -moz-border-radius: 2px 2px 6px 6px;
-    border: 1px solid rgb(66, 68, 72);
-    border: 1px solid rgb(226, 226, 226);
     _height: 400px;
     overflow: hidden;
 }
@@ -64,16 +102,13 @@ html, body {
     height: 40px;
     border-top: 1px solid rgb(155, 163, 174);
     border-bottom: 1px solid rgb(51, 51, 51);
-    background: url(../images/bg_top.png) 0px 0px repeat-x rgba(0, 0, 0, 0);
-    background-color: rgb(107, 120, 136);
-    background: -webkit-gradient(linear, left top,left bottom, from(rgb(107, 120, 136)),to(rgb(84, 94, 106)), color-stop(0.1,rgb(106, 119, 134)),color-stop(0.5,rgb(94, 105, 119)),color-stop(0.9,rgb(86, 97, 109)),color-stop(1.0,rgb(84, 94, 106)));
     background-image: -moz-linear-gradient(top, #6A7786 10%, #5E6977 50%, #56616D 90%, #545E6A 100%);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(107, 120, 136)),to(rgb(84, 94, 106)), color-stop(0.1,rgb(106, 119, 134)),color-stop(0.5,rgb(94, 105, 119)),color-stop(0.9,rgb(86, 97, 109)),color-stop(1.0,rgb(84, 94, 106)));
     position: relative;
     border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
-    -o-border-radius: 4px 4px 0 0;
-    -ms-border-radius: 4px 4px 0 0;
+
 }
 
 .chatPanel .chatScorll {
@@ -98,8 +133,8 @@ html, body {
 
     width: 32px;
     height: 32px;
-    border: 1px solid #ccc\9;
     border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #ccc\9;
     box-shadow: 0px 1px 0px rgb(179, 182, 186);
     float: right;
     margin-right: 10px;
@@ -239,81 +274,5 @@ a.chatSend b {
     margin-top: 135px;
     visibility: visible;
     height: 42px;
-}
-
-/**Login Page Style*/
-#loginContainer{
-    height: 100%;
-    width: 100%;
-    text-shadow: 0 1px 1px rgb(51, 51, 51);
-}
-
-#loginContainer .loginPanel {
-    position: absolute;
-    left: 400px;
-    width: 500px;
-    height: 380px;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
-    text-align: center;
-    border: none;
-    margin: 0 auto;
-    padding: 200px 0 0;
-    text-align: center;
-    position: static;
-}
-
-#loginContainer .loginPanel .enlogoTitle {
-    margin-bottom: 20px;
-}
-
-#loginContainer .loginPanel .enlogoTitle h1{
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-#loginContainer .loginPanel input{
-    float: right;
-
-    height: 20px;
-    margin: 0 10px 0 10px;
-    padding: 7px 10px 2px;
-    outline: none;
-    box-shadow: 1px 1px 2px rgb(187, 187, 187) inset;
-    background: rgb(238, 238, 238);
-    background: #fafafa\9;
-    border-radius: 2px;
-    border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border: 1px solid #ccc\9;
-    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
-    line-height: 1.2em;
-    resize: none;
-}
-
-#loginContainer .loginPanel button{
-    float: right;
-    font-size: 14px;
-    line-height: 28px;
-    border-top: 1px solid rgb(123, 143, 184);
-    text-shadow: 0 -1px 0 rgb(79, 115, 159);
-    text-align: center;
-    display: block;
-    float: right;
-    height: 28px;
-    width: 80px;
-    margin: 0px 1px 1px 0;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid rgb(41, 68, 126);
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    box-shadow: 0 1px 3px rgb(217, 217, 217);
-    text-shadow: 0 1px 1px rgb(68, 68, 68);
-    background: rgb(72, 108, 180);
-    background: -webkit-gradient(linear, left top,left bottom, from(rgb(96, 120, 170)),to(rgb(70, 92, 140)), color-stop(0.1,rgb(94, 118, 167)),color-stop(0.5,rgb(84, 107, 156)),color-stop(0.9,rgb(73, 95, 143)),color-stop(1.0,rgb(70, 92, 140)));
-    background-image: -moz-linear-gradient(top, #5E76A7 10%, #546B9C 50%, #495F8F 90%, #465C8C 100%);
 }
 

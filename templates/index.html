@@ -14,21 +14,18 @@
                     <div class="top">
                         <div id="profile" class="title">
                            <div class="myProfile">
-                            <img src="{{ avatar }}" un="avatar_upsunday" onerror="reLoadImg(this)">
-                            <div class="avatar" id="accountAvatarWrapper" click="popupModifyAvatarWin" style="cursor:pointer;"></div>
-                            <a class="unreadTotalCount" id="unreadTotalCount" href="javascript:;" style="display:none;">0</a>
-                            <div class="info">  <span class="nickName">{{ nickname }}</span> </div>
-                            <div class="operaterBox" style="display:none;" id="operaterBox">
-                                <div class="operaterBoxPanel">  <a href="javascript:;" class="DesktopRemind" tip="Please enable desktop alert in your browser first."> <span class="iconPic iconPicDeskRem left"></span> <span class="operaterBoxTitle left">Desktop Alert</span> <div class="clr"></div> </a> <a href="javascript:;" class="voiceCancel" click="toggleMute"> <span class="iconPic  left"></span> <span class="operaterBoxTitle left">Sound Off</span> <div class="clr"></div> </a>     <a href="javascript:;" class="feedback" click="feedback">         <span class="iconPic iconFeedback left"></span>         <span class="operaterBoxTitle left">Feedback</span>         <div class="clr"></div>     </a>     <a href="javascript:;" class="iconLogout" url="/cgi-bin/mmwebwx-bin/webwxlogout" click="logout"> <span class="iconPic iconPicLogout left"></span>
-                                <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>
+                                <img src="{{ avatar }}">
+                                <div class="info">  <span class="nickName">{{ nickname }}</span> </div>
+                                <div class="operaterBox" style="display:none;" id="operaterBox">
+                                    <div class="operaterBoxPanel">  <a href="javascript:;" class="DesktopRemind" tip="Please enable desktop alert in your browser first."> <span class="iconPic iconPicDeskRem left"></span> <span class="operaterBoxTitle left">Desktop Alert</span> <div class="clr"></div> </a> <a href="javascript:;" class="voiceCancel" click="toggleMute"> <span class="iconPic  left"></span> <span class="operaterBoxTitle left">Sound Off</span> <div class="clr"></div> </a>     <a href="javascript:;" class="feedback" click="feedback">         <span class="iconPic iconFeedback left"></span>         <span class="operaterBoxTitle left">Feedback</span>         <div class="clr"></div>     </a>     <a href="javascript:;" class="iconLogout" url="/cgi-bin/mmwebwx-bin/webwxlogout" click="logout"> <span class="iconPic iconPicLogout left"></span>
+                                    <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>
+                                </div>
                             </div>
-                                   <a href="javascript:;" class="iconOperater" click="toggleSysMenu"></a>
-                            </div> <div class="clr"></div>
                        </div>
                     </div>
                 </div>
                 <div id="vernierContainer" style="width: 32px; position: relative; float: left; overflow: hidden; margin-top: 135px; visibility: visible; height: 42px;">
-                    <div class="activeChatVernier" style="top: -347.5px;"><img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" onerror="reLoadImg(this)"></div>
+                    <div class="activeChatVernier" style="top: -347.5px;"></div>
                 </div>
                 <div class="chat lightBorder" style="visibility: visible;height:400px">
                     <div class="chatContainer">
@@ -76,7 +73,7 @@
 
             if ("WebSocket" in window) {
 
-                var ws = new WebSocket('ws://localhost:8888/websocket')
+                var ws = new WebSocket('ws://192.168.119.138:8888/websocket')
 
                 ws.onmessage = function(event){
 

@@ -4,7 +4,7 @@
     <title>Tornado WebSocket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="/static/jquery.js"></script>
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/login.css" rel="stylesheet">
   </head>
   <body>
     <div id="loginContainer">
@@ -15,9 +15,9 @@
             </div>
             <div class="panelContent">
                 <form method="post">
+                    <input name="email" type="email" class="top" placeholder="邮箱地址"/>
+                    <input name="nickname" type="text" class="bottom" placeholder="昵称"/>
                     <button type="submit">进入</button>
-                    <input name="nickname" type="text" placeholder="昵称"/>
-                    <input name="email" type="email" placeholder="邮箱地址"/>
                 </form>
             </div>
         </div>
@@ -27,13 +27,9 @@
 
     $(function(){
         $("form").submit(function(){
-
             return true;
-
         });
     });
-
-
     </script>
   </body>
 </html>

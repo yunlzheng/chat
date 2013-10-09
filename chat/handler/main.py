@@ -1,22 +1,28 @@
 # coding: utf-8
 import json
 import tornado.web
-
-from chat.define import _CLIENTS_MAP, _CHANNEL
+from tornado.log import app_log
+from chat.define import ChatSigletonDefine
 from chat.util import getAvatar
 from chat.handler import BaseHandler
 
 
 class MainHandler(BaseHandler):
 
+    def initialize(self):
+        self.clients = ChatSigletonDefine.get_singleton_instance().clients
+        self.channel = ChatSigletonDefine.get_singleton_instance().channel
+
     @tornado.web.authenticated
     def get(self):
         email = self.get_secure_cookie('email')
+
+        app_log.debug(self.clients)
         params = {
             "avatar": getAvatar(self.get_secure_cookie('email')),
             "email": email,
             "nickname": self.get_secure_cookie('nickname'),
-            "clients": _CLIENTS_MAP
+            "clients": self.clients
         }
         self.render("index.html", **params)
 
@@ -31,4 +37,4 @@ class MainHandler(BaseHandler):
             "type": "normal"
         }
         r = self.settings['redis']
-        r.publish(_CHANNEL, json.dumps(data))
+        r.publish(self.channel, json.dumps(data))

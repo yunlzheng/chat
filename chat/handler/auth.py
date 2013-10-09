@@ -1,7 +1,6 @@
 # coding: utf-8
 from chat.handler import BaseHandler
 
-
 class AuthHandler(BaseHandler):
 
     def get(self):

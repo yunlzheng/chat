@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+    background: rgb(78, 83, 89) url(/static/images/bg_universal.png) repeat 0 0;
+    color: rgb(102, 102, 102);
+    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+/**Login Page Style*/
+#loginContainer{
+    height: 100%;
+    width: 100%;
+    text-shadow: 0 1px 1px rgb(51, 51, 51);
+}
+
+#loginContainer .loginPanel {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 160px 0 0;
+}
+
+#loginContainer .loginPanel .enlogoTitle {
+    margin-bottom: 20px;
+}
+
+#loginContainer .loginPanel .enlogoTitle h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#loginContainer .loginPanel input{
+    height: 30px;
+    padding: 7px 10px 2px;
+    outline: none;
+    background: #EEE;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    font: 14px/1.5 Helvetica,"微软雅黑","黑体",Arial,Tahoma;
+    line-height: 1.2em;
+    display: block;
+    width: 210px;
+    margin: 0 auto;
+    color: #534F4F;
+    font-weight: bold;
+}
+
+#loginContainer .loginPanel input.bottom{
+    border-radius: 0 0 5px 5px;
+}
+
+#loginContainer .loginPanel input.top{
+    border-radius: 5px 5px 0 0;
+}
+
+#loginContainer .loginPanel button{
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    height: 32px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(41, 68, 126);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    text-shadow: 0 1px 1px rgb(68, 68, 68);
+    background-color: rgb(72, 108, 180);
+    background: -webkit-gradient(linear, left top,left bottom, from(rgb(96, 120, 170)),to(rgb(70, 92, 140)), color-stop(0.1,rgb(94, 118, 167)),color-stop(0.5,rgb(84, 107, 156)),color-stop(0.9,rgb(73, 95, 143)),color-stop(1.0,rgb(70, 92, 140)));
+    background-image: -moz-linear-gradient(top, #5E76A7 10%, #546B9C 50%, #495F8F 90%, #465C8C 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+
+}

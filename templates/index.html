@@ -23,6 +23,30 @@
                             </div>
                        </div>
                     </div>
+                    <div class="listContentWrap">
+                        <div>
+                            <div class="listContent">
+                                <div class="conversationContainer">
+                                    {% for key in clients.keys() %}
+                                        <div class="chatListColumn">
+                                            <div class="avatar_wrap"><img class="avatar" src=""></div>
+                                            <div class="info">
+                                                <div class="nickName">
+                                                    <div class="left name" style="">File Transfer</div>
+                                                    <div class="clr"></div>
+                                                </div>
+                                                <div class="descWrapper">
+                                                    <img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" class="tipIcon iconSendFailed sendFailedStatus" style="display: none;">
+                                                    <img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" class="tipIcon iconSending sendingStatus hide" style="display: none;">
+                                                    <p class="desc">描述信息</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% end %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="vernierContainer" style="width: 32px; position: relative; float: left; overflow: hidden; margin-top: 135px; visibility: visible; height: 42px;">
                     <div class="activeChatVernier" style="top: -347.5px;"></div>

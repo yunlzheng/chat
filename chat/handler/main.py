@@ -12,11 +12,11 @@ class MainHandler(BaseHandler):
     def initialize(self):
         self.clients = ChatSigletonDefine.get_singleton_instance().clients
         self.channel = ChatSigletonDefine.get_singleton_instance().channel
+        print "current connect clients : {0}".format(self.clients)
 
     @tornado.web.authenticated
     def get(self):
         email = self.get_secure_cookie('email')
-
         app_log.debug(self.clients)
         params = {
             "avatar": getAvatar(self.get_secure_cookie('email')),

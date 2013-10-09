@@ -22,7 +22,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         }
         client = Client(_id, **kwags)
         self.clients[_id] = client
-        
+
     def send_to_all(self, message):
         r = self.settings['redis']
         r.publish(self.channel, message)

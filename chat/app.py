@@ -20,7 +20,7 @@ class Application(tornado.web.Application):
 
     def __init__(self):
 
-        r = redis.Redis(host="localhost", db=2)
+        r = redis.Redis(host="192.168.1.111", db=2)
         channel = ChatSigletonDefine.get_singleton_instance().channel
         client = Listener(r, [channel])
         client.start()

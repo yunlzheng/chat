@@ -1,5 +1,5 @@
 # coding: utf-8
-from chat.handler.base import BaseHandler
+from chat.handler import BaseHandler
 
 
 class AuthHandler(BaseHandler):

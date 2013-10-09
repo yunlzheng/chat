@@ -14,10 +14,10 @@
                     <div class="top">
                         <div id="profile" class="title">
                            <div class="myProfile">
-                            <img src="/cgi-bin/mmwebwx-bin/webwxgeticon?seq=1381697005&amp;username=upsunday" un="avatar_upsunday" onerror="reLoadImg(this)">
+                            <img src="{{ avatar }}" un="avatar_upsunday" onerror="reLoadImg(this)">
                             <div class="avatar" id="accountAvatarWrapper" click="popupModifyAvatarWin" style="cursor:pointer;"></div>
                             <a class="unreadTotalCount" id="unreadTotalCount" href="javascript:;" style="display:none;">0</a>
-                            <div class="info">  <span class="nickName">郑云龙</span> </div>
+                            <div class="info">  <span class="nickName">{{ nickname }}</span> </div>
                             <div class="operaterBox" style="display:none;" id="operaterBox">
                                 <div class="operaterBoxPanel">  <a href="javascript:;" class="DesktopRemind" tip="Please enable desktop alert in your browser first."> <span class="iconPic iconPicDeskRem left"></span> <span class="operaterBoxTitle left">Desktop Alert</span> <div class="clr"></div> </a> <a href="javascript:;" class="voiceCancel" click="toggleMute"> <span class="iconPic  left"></span> <span class="operaterBoxTitle left">Sound Off</span> <div class="clr"></div> </a>     <a href="javascript:;" class="feedback" click="feedback">         <span class="iconPic iconFeedback left"></span>         <span class="operaterBoxTitle left">Feedback</span>         <div class="clr"></div>     </a>     <a href="javascript:;" class="iconLogout" url="/cgi-bin/mmwebwx-bin/webwxlogout" click="logout"> <span class="iconPic iconPicLogout left"></span>
                                 <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>

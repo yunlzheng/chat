@@ -1,8 +1,8 @@
 # coding: utf-8
 import tornado.websocket
 
-from chat.model.client import Client
-from chat.chat import _CLIENTS_MAP, _CHANNEL
+from chat.model import Client
+from chat.define import _CLIENTS_MAP, _CHANNEL
 
 
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
@@ -16,7 +16,6 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         }
         client = Client(_id, **kwags)
         _CLIENTS_MAP[_id] = client
-        #self.write_message("欢迎进入聊天室！")
 
     def send_to_all(self, message):
         r = self.settings['redis']

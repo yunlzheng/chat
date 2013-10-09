@@ -1,6 +1,8 @@
 # coding:utf-8
 import threading
 
+from chat.define import _CLIENTS_MAP
+
 
 class Listener(threading.Thread):
 
@@ -12,8 +14,8 @@ class Listener(threading.Thread):
 
     def work(self, item):
         print item
-        for key in CLIENTS_MAP.keys():
-            CLIENTS_MAP[key].webSocketHandler.write_message(item['data'])
+        for key in _CLIENTS_MAP.keys():
+            _CLIENTS_MAP[key].websocket_handler.write_message(item['data'])
 
     def run(self):
         for item in self.pubsub.listen():

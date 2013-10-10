@@ -1,5 +1,7 @@
 # coding: utf-8
+import tornado.web
 from chat.handler import BaseHandler
+
 
 class AuthHandler(BaseHandler):
 
@@ -12,5 +14,18 @@ class AuthHandler(BaseHandler):
         self.set_secure_cookie('email', email)
         self.set_secure_cookie('nickname', nickname)
         self.redirect("/chat")
+
+
+class LogoutHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+            """
+            退出登录，清除当前cookie值
+
+            """
+            self.clear_cookie("nickname")
+            self.clear_cookie("email")
+            self.redirect("/")
 
 

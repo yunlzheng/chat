@@ -14,7 +14,6 @@ class MainHandler(BaseHandler):
         self.channel = options.redis_channel
         self.clients = ChatSigletonDefine.get_singleton_instance().clients
         self.client_list = [self.clients[key] for key in self.clients]
-        print "current connect clients : {0}".format(self.client_list)
 
     @tornado.web.authenticated
     def get(self):
@@ -40,3 +39,7 @@ class MainHandler(BaseHandler):
         }
         r = self.settings['redis']
         r.publish(self.channel, json.dumps(data))
+
+    @tornado.web.authenticated
+    def put(self):
+        self.client_list = [self.clients[key] for key in self.clients]

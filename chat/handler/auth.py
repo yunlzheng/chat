@@ -12,16 +12,14 @@ class AuthHandler(BaseHandler):
     def post(self):
         nickname = self.get_argument("nickname")
         email = self.get_argument("email")
-
         clients = ChatSigletonDefine.get_singleton_instance()._CLIENTS_MAP
         for key in clients.keys():
             if clients[key].email == email:
                 self.redirect("/?email=existed")
-                return 
+                return
         self.set_secure_cookie('email', email)
         self.set_secure_cookie('nickname', nickname)
         self.redirect("/chat")
-
 
 class LogoutHandler(BaseHandler):
 

@@ -57,31 +57,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="auth.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+      <file leaf-file-name="message.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="23" selection-start="543" selection-end="543" vertical-scroll-proportion="0.34671533" vertical-offset="171" max-vertical-offset="836">
+            <state line="23" column="9" selection-start="688" selection-end="688" vertical-scroll-proportion="0.7748227" vertical-offset="0" max-vertical-offset="1254">
               <folding>
-                <element signature="e#16#34#0" expanded="true" />
+                <element signature="e#16#27#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="define.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/define.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="115" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +104,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -374,7 +358,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,11 +450,6 @@
         <state line="281" column="42" selection-start="12985" selection-end="12985" vertical-scroll-proportion="0.0" vertical-offset="4854" max-vertical-offset="5719" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="60" selection-start="508" selection-end="508" vertical-scroll-proportion="0.2597865" vertical-offset="196" max-vertical-offset="1254" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.26950353" vertical-offset="0" max-vertical-offset="564">
@@ -478,25 +457,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="115" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
+        <state line="9" column="33" selection-start="202" selection-end="202" vertical-scroll-proportion="0.30319148" vertical-offset="0" max-vertical-offset="798">
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/define.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="665">
+        <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.42730495" vertical-offset="44" max-vertical-offset="665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="543" selection-end="543" vertical-scroll-proportion="0.34671533" vertical-offset="171" max-vertical-offset="836">
+        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.37056738" vertical-offset="0" max-vertical-offset="969">
           <folding>
-            <element signature="e#16#34#0" expanded="true" />
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="688" selection-end="688" vertical-scroll-proportion="0.7748227" vertical-offset="0" max-vertical-offset="1254">
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

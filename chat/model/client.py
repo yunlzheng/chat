@@ -10,3 +10,6 @@ class Client():
         self.nickname = nickname
         self.email = email
         self.avatar = getAvatar(self.email)
+
+    def __str__(self):
+        return self.id

@@ -27,15 +27,15 @@
                                     <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>
                                 </div>
                             </div>
-                            <a href="/logout"><i class="icon-off"></i></a>
+                            <a href="/logout"><i class="icon-off"></i><a>
                        </div>
                     </div>
                     <div class="listContentWrap">
                         <div style="height: 400px; width: 100%; overflow-y: auto; overflow-x:hidden; position: relative;">
                             <div class="listContent">
-                                <div class="conversationContainer">
+                                <div id="chatMember" class="conversationContainer">
                                     {% for client in clients %}
-                                        <div class="chatListColumn">
+                                        <div id="{{ client.id }}" class="chatListColumn">
 
                                             <div class="avatar_wrap"><img class="avatar" src="{{ client.avatar }}"></div>
                                             <div class="info">
@@ -60,7 +60,7 @@
                 <div class="chat lightBorder" style="visibility: visible;height:400px">
                     <div class="chatContainer">
                         <div class="chatTitle">
-                            <h2>Chat Root</h2>
+                            <h2>chat</h2>
                         </div>
                         <div class="chatScorll" id="message"></div>
                         <div id="chat_editor" class="chatOperator lightBorder">
@@ -143,6 +143,20 @@
         </div>
     </div>
 
+    <script type="text/template" id="tpl_chatmember">
+        <div id="{3}" class="chatListColumn">
+            <div class="avatar_wrap"><img class="avatar" src="{0}"></div>
+            <div class="info">
+                <div class="nickName">
+                    <div class="left name" style="">{1}</div>
+                </div>
+                <div class="descWrapper">
+                    <p class="desc">{2}</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
     <script type="text/template" id="tpl_chatItem">
         <div class='chatItem {2}'>
             <div>
@@ -190,7 +204,6 @@
 
                 var xx = (e.pageX || e.clientX + document.body.scrollLeft)-290;
                 var yy = (e.pageY || e.clientY + document.boyd.scrollTop)-155;
-
                 $("#emoji_face").css("top",yy).css("left",xx).toggle();
 
             });
@@ -234,20 +247,40 @@
                 ws.onmessage = function(event){
 
                     obj = eval("("+event.data+")")
-                    console.log(obj)
-                    var tpl = tpl_chatItem.replace("{0}", obj.message)
-                        .replace("{1}", obj.avatar)
-                        .replace("{3}", obj.nickname)
 
-                    if(obj.email==current_user){
-                        tpl = tpl.replace("{2}", "me")
-                    }else{
-                        tpl = tpl.replace("{2}", "you")
+                    if(obj.type=="normal"){
+
+                        var tpl = tpl_chatItem.replace("{0}", obj.message)
+                            .replace("{1}", obj.avatar)
+                            .replace("{3}", obj.nickname)
+
+                        if(obj.email==current_user){
+                            tpl = tpl.replace("{2}", "me")
+                        }else{
+                            tpl = tpl.replace("{2}", "you")
+                        }
+
+                        $("#message").append(tpl)
+                        emojify.run();
+
+                    }else if(obj.type=="add"){
+
+                        console.log(obj);
+                        //有新成员加入
+                        var tmp = $("#"+obj.id)
+                        console.log(tmp)
+                        var tpl_chatmember = $("#tpl_chatmember").html()
+                                .replace("{0}", obj.avatar)
+                                .replace("{1}", obj.nickname)
+                                .replace("{2}", "")
+                                .replace("{3}", obj.id)
+                       $("#chatMember").append(tpl_chatmember)
+
+                    }else if(obj.type=='out'){
+                        console.log(obj)
+                        var select = "#"+obj.id
+                        $(select).remove()
                     }
-
-                    $("#message").append(tpl)
-                    emojify.run();
-
                 }
 
             } else {

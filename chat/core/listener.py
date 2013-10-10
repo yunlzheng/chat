@@ -15,7 +15,10 @@ class Listener(threading.Thread):
 
         clients = ChatSigletonDefine._instance.clients
         for key in clients.keys():
-            clients[key].websocket_handler.write_message(item['data'])
+            try:
+                clients[key].websocket_handler.write_message(item['data'])
+            except Exception as ex:
+                print "send message error happend {0}".format(ex)
 
     def run(self):
         for item in self.pubsub.listen():

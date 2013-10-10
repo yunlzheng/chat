@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="/static/jquery.js"></script>
     <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/font-awesome-ie7.css" rel="stylesheet">
   </head>
   <body>
     <div id="container">
         <div id="chat" class="chatPanel normalPanel">
             <div class="content">
-                <div id="chat_leftpanel" class="list" style="height:400px">
+                <div id="chat_leftpanel" class="list">
                     <div class="top">
                         <div id="profile" class="title">
                            <div class="myProfile">
@@ -21,26 +22,26 @@
                                     <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>
                                 </div>
                             </div>
+                            <i class="icon-off"></i>
                        </div>
                     </div>
                     <div class="listContentWrap">
-                        <div>
+                        <div style="height: 400px; width: 100%; overflow-y: auto; overflow-x:hidden; position: relative;">
                             <div class="listContent">
                                 <div class="conversationContainer">
-                                    {% for key in clients.keys() %}
+                                    {% for client in clients %}
                                         <div class="chatListColumn">
-                                            <div class="avatar_wrap"><img class="avatar" src=""></div>
+
+                                            <div class="avatar_wrap"><img class="avatar" src="{{ client.avatar }}"></div>
                                             <div class="info">
                                                 <div class="nickName">
-                                                    <div class="left name" style="">File Transfer</div>
-                                                    <div class="clr"></div>
+                                                    <div class="left name" style="">{{ client.nickname }}</div>
                                                 </div>
                                                 <div class="descWrapper">
-                                                    <img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" class="tipIcon iconSendFailed sendFailedStatus" style="display: none;">
-                                                    <img src="https://res.wx.qq.com/en_US/htmledition/images/spacer1844c2.gif" class="tipIcon iconSending sendingStatus hide" style="display: none;">
-                                                    <p class="desc">描述信息</p>
+                                                    <p class="desc">{{ client.email }}</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                     {% end %}
                                 </div>
@@ -69,15 +70,23 @@
         </div>
     </div>
 
+    <script type="text/template" id="tpl_chatItem">
+        <div class='chatItem {2}'>
+            <div>
+                <img class='avatar' src='{1}' title='{3}'/>
+                <div class='content'>{0}</div>
+                <div style='clear:both'></div>
+            </div>
+        </div>
+    </script>
+
     <script type="text/javascript">
 
         var current_user = '{{ email }}'
 
         //Template
-        var tpl_chatItem = "<div class='chatItem {2}'>"+
-                                "<img class='avatar' src='{1}' title='{3}'/>"+
-                                "<div class='content'>{0}</div>"+
-                            "</div>"
+
+        var tpl_chatItem = $("#tpl_chatItem").html();
 
         $(function(){
 
@@ -97,7 +106,7 @@
 
             if ("WebSocket" in window) {
 
-                var ws = new WebSocket('ws://192.168.119.138:8888/websocket')
+                var ws = new WebSocket('ws://localhost:8888/websocket')
 
                 ws.onmessage = function(event){
 

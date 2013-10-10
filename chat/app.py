@@ -28,6 +28,7 @@ class Application(tornado.web.Application):
 
         r = redis.Redis(host=options.redis_host, db=options.redis_db)
         client = Listener(r, [options.redis_channel])
+
         client.start()
         settings = dict(
             template_path=TEMPLATE_DIR,

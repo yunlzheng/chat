@@ -1,6 +1,7 @@
 # coding: utf-8
 import tornado.websocket
 from tornado.log import app_log
+from tornado.options import options
 from chat.model import Client
 from chat.define import ChatSigletonDefine
 
@@ -8,7 +9,7 @@ from chat.define import ChatSigletonDefine
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
     def initialize(self):
-        self.channel = ChatSigletonDefine.get_singleton_instance().channel
+        self.channel = options.redis_channel
         self.clients = ChatSigletonDefine.get_singleton_instance().clients
         print self.clients
 

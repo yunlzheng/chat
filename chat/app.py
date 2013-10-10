@@ -3,6 +3,7 @@ import os
 from os.path import abspath, dirname
 
 import tornado.web
+from tornado.options import define, options
 import redis
 from chat.router import handlers
 from chat.core import Listener
@@ -13,6 +14,11 @@ PROJECT_DIR = dirname(dirname(abspath(__file__)))
 TEMPLATE_DIR = os.path.join(PROJECT_DIR, 'templates')
 STATIC_DIR = os.path.join(PROJECT_DIR, 'static')
 
+define('rootPath', default="localhost", help="web chat rootPath used by websocket")
+define('redis_host', default='localhost')
+define('redis_db', default=2, type=int)
+define('redis_channel', default='web_chat', help='message pubsub channel')
+
 
 class Application(tornado.web.Application):
 
@@ -20,9 +26,8 @@ class Application(tornado.web.Application):
 
     def __init__(self):
 
-        r = redis.Redis(host="localhost", db=2)
-        channel = ChatSigletonDefine.get_singleton_instance().channel
-        client = Listener(r, [channel])
+        r = redis.Redis(host=options.redis_host, db=options.redis_db)
+        client = Listener(r, [options.redis_channel])
         client.start()
         settings = dict(
             template_path=TEMPLATE_DIR,

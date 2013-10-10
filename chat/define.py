@@ -10,6 +10,7 @@ class Singleton(object):
             cls._instance = orig.__new__(cls, *args, **kw)
         return cls._instance
 
+
 class ChatSigletonDefine(Singleton):
 
     _CLIENTS_MAP = {}

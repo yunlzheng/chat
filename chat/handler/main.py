@@ -1,6 +1,7 @@
 # coding: utf-8
 import json
 import tornado.web
+from tornado.options import options
 from tornado.log import app_log
 from chat.define import ChatSigletonDefine
 from chat.util import getAvatar
@@ -10,8 +11,8 @@ from chat.handler import BaseHandler
 class MainHandler(BaseHandler):
 
     def initialize(self):
+        self.channel = options.redis_channel
         self.clients = ChatSigletonDefine.get_singleton_instance().clients
-        self.channel = ChatSigletonDefine.get_singleton_instance().channel
         print "current connect clients : {0}".format(self.clients)
 
     @tornado.web.authenticated

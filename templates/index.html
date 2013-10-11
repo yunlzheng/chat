@@ -265,21 +265,24 @@
 
                     }else if(obj.type=="add"){
 
-                        console.log(obj);
-                        //有新成员加入
-                        var tmp = $("#"+obj.id)
-                        console.log(tmp)
-                        var tpl_chatmember = $("#tpl_chatmember").html()
-                                .replace("{0}", obj.avatar)
-                                .replace("{1}", obj.nickname)
+                        for(var i=0;i<obj.clients.length;i++){
+                            //有新成员加入
+                            client = obj.clients[i]
+                            var length = $("#"+client.id).length
+                            if(length==0){
+                                var tpl_chatmember = $("#tpl_chatmember").html()
+                                .replace("{0}", client.avatar)
+                                .replace("{1}", client.nickname)
                                 .replace("{2}", "")
-                                .replace("{3}", obj.id)
-                       $("#chatMember").append(tpl_chatmember)
+                                .replace("{3}", client.id)
+                                $("#chatMember").append(tpl_chatmember)
+                            }
+
+                        }
 
                     }else if(obj.type=='out'){
-                        console.log(obj)
-                        var select = "#"+obj.id
-                        $(select).remove()
+                        var select = "#"+obj.id;
+                        $(select).fadeOut(1000).remove();
                     }
                 }
 

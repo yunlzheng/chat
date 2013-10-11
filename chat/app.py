@@ -1,5 +1,6 @@
 # coding: utf-8
 import os
+
 from os.path import abspath, dirname
 
 import tornado.web
@@ -17,6 +18,7 @@ STATIC_DIR = os.path.join(PROJECT_DIR, 'static')
 define('redis_host', default='localhost')
 define('redis_db', default=2, type=int)
 define('redis_channel', default='web_chat', help='message pubsub channel')
+
 
 class Application(tornado.web.Application):
 
@@ -39,6 +41,7 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **settings)
 
 if __name__ == "__main__":
+    tornado.options.parse_command_line()
     application = Application()
 
 

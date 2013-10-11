@@ -1,13 +1,13 @@
 # coding: utf-8
 import tornado.web
-from chat.define import ChatSigletonDefine
 from chat.handler import BaseHandler
+from chat.define import ChatSigletonDefine
 
 
 class AuthHandler(BaseHandler):
 
     def get(self):
-        self.render("login.html")
+        self.render("login.html", error=None)
 
     def post(self):
         nickname = self.get_argument("nickname")
@@ -15,11 +15,11 @@ class AuthHandler(BaseHandler):
         clients = ChatSigletonDefine.get_singleton_instance()._CLIENTS_MAP
         for key in clients.keys():
             if clients[key].email == email:
-                self.redirect("/?email=existed")
-                return
+                self.render("login.html", error="邮箱正在使用中...")
         self.set_secure_cookie('email', email)
         self.set_secure_cookie('nickname', nickname)
         self.redirect("/chat")
+
 
 class LogoutHandler(BaseHandler):
 

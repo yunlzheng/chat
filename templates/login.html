@@ -16,6 +16,10 @@
             </div>
             <div class="panelContent">
                 <form method="post">
+                    {% if error %}
+                        <span class="label label-warning">{{ error }}</span>
+                        <br/><br/>
+                    {% end %}
                     <input name="email" type="email" class="top" placeholder="邮箱地址"/>
                     <input name="nickname" type="text" class="bottom" placeholder="昵称"/>
                     <button type="submit">进入</button>

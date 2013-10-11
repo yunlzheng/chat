@@ -12,6 +12,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/core/__init__.py" afterPath="$PROJECT_DIR$/chat/core/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/__init__.py" afterPath="$PROJECT_DIR$/chat/handler/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/model/__init__.py" afterPath="$PROJECT_DIR$/chat/model/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/__init__.py" afterPath="$PROJECT_DIR$/chat/util/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/app.py" afterPath="$PROJECT_DIR$/chat/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/auth.py" afterPath="$PROJECT_DIR$/chat/handler/auth.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/base.py" afterPath="$PROJECT_DIR$/chat/handler/base.py" />
@@ -57,12 +58,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="message.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="message.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="9" selection-start="688" selection-end="688" vertical-scroll-proportion="0.7748227" vertical-offset="0" max-vertical-offset="1254">
+            <state line="19" column="8" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1159">
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="43" selection-start="274" selection-end="282" vertical-scroll-proportion="0.3380783" vertical-offset="0" max-vertical-offset="562">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="50" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+              <folding>
+                <element signature="e#16#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listener.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="35" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="74" selection-start="401" selection-end="402" vertical-scroll-proportion="-6.92" vertical-offset="93" max-vertical-offset="798">
+              <folding>
+                <element signature="e#16#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,20 +136,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/chat/handler/main.py" />
-        <option value="$PROJECT_DIR$/chat/app.py" />
         <option value="$PROJECT_DIR$/static/css/emojify.min.css" />
         <option value="$PROJECT_DIR$/static/emojify.js" />
         <option value="$PROJECT_DIR$/chat/handler/__init__.py" />
         <option value="$PROJECT_DIR$/chat/router.py" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/chat/model/client.py" />
         <option value="$PROJECT_DIR$/chat/core/listener.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/chat/handler/message.py" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/chat/handler/auth.py" />
+        <option value="$PROJECT_DIR$/chat/app.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/chat/handler/main.py" />
+        <option value="$PROJECT_DIR$/chat/handler/message.py" />
+        <option value="$PROJECT_DIR$/chat/util/__init__.py" />
       </list>
     </option>
   </component>
@@ -135,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,19 +233,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="Z:/vms" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -280,9 +340,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,6 +361,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -349,6 +409,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="" />
@@ -358,7 +435,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,7 +443,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38808373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -393,39 +470,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/emojify.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="158191" selection-start="158191" selection-end="158191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/emojify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="24" selection-start="3187" selection-end="3189" vertical-scroll-proportion="-7.0" vertical-offset="1060" max-vertical-offset="19285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/router.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="30723" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="43" selection-start="130" selection-end="143" vertical-scroll-proportion="0.10106383" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.31902984" vertical-offset="0" max-vertical-offset="798" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.42205322" vertical-offset="595" max-vertical-offset="1995" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
@@ -440,42 +487,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="42" selection-start="12985" selection-end="12985" vertical-scroll-proportion="0.0" vertical-offset="4854" max-vertical-offset="5719" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.26950353" vertical-offset="0" max-vertical-offset="564">
+        <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.26950353" vertical-offset="0" max-vertical-offset="564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/define.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="34" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="406" column="49" selection-start="15064" selection-end="15064" vertical-scroll-proportion="0.0" vertical-offset="7152" max-vertical-offset="30723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="1" selection-start="3173" selection-end="3186" vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2356">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24906367" vertical-offset="114" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="202" selection-end="202" vertical-scroll-proportion="0.30319148" vertical-offset="0" max-vertical-offset="798">
+        <state line="14" column="74" selection-start="401" selection-end="402" vertical-scroll-proportion="-6.92" vertical-offset="93" max-vertical-offset="798">
           <folding>
             <element signature="e#16#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/define.py">
+    <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.42730495" vertical-offset="44" max-vertical-offset="665">
+        <state line="19" column="35" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="279" column="0" selection-start="12958" selection-end="12958" vertical-scroll-proportion="3.8867562" vertical-offset="3276" max-vertical-offset="5776">
+          <folding>
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1381472400061" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.37056738" vertical-offset="0" max-vertical-offset="969">
+        <state line="25" column="50" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>
@@ -484,10 +576,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="688" selection-end="688" vertical-scroll-proportion="0.7748227" vertical-offset="0" max-vertical-offset="1254">
+        <state line="19" column="8" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1159">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="274" selection-end="282" vertical-scroll-proportion="0.3380783" vertical-offset="0" max-vertical-offset="562">
+          <folding />
         </state>
       </provider>
     </entry>

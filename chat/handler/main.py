@@ -11,10 +11,11 @@ class MainHandler(BaseHandler):
     @tornado.web.authenticated
     def get(self):
         email = self.get_secure_cookie('email')
+        nickname = self.get_secure_cookie('nickname')
         params = {
-            "avatar": getAvatar(self.get_secure_cookie('email')),
+            "avatar": getAvatar(email, name=nickname),
             "email": email,
-            "nickname": self.get_secure_cookie('nickname'),
+            "nickname": nickname,
             "clients": []
         }
         self.render("index.html", **params)

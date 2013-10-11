@@ -19,7 +19,6 @@
                     <div class="top">
                         <div id="profile" class="title">
                            <div class="myProfile">
-
                                <a href="https://cn.gravatar.com/" title="点击更换你的头像" target="_blank"><img src="{{ avatar }}"/> </a>
                                 <div class="info">  <span class="nickName">{{ nickname }}</span> </div>
                                 <div class="operaterBox" style="display:none;" id="operaterBox">
@@ -34,8 +33,19 @@
                         <div style="height: 400px; width: 100%; overflow-y: auto; overflow-x:hidden; position: relative;">
                             <div class="listContent">
                                 <div id="chatMember" class="conversationContainer">
+                                    <div id="chat-all" class="chatListColumn" target="#all">
+                                            <div class="avatar_wrap"><img class="avatar" src=""></div>
+                                            <div class="info">
+                                                <div class="nickName">
+                                                    <div class="left name" style="">群聊</div>
+                                                </div>
+                                                <div class="descWrapper">
+                                                    <p class="desc"></p>
+                                                </div>
+                                            </div>
+                                    </div>
                                     {% for client in clients %}
-                                        <div id="{{ client.id }}" class="chatListColumn">
+                                        <div id="{{ client.id }}" class="chatListColumn" target="#chat-{{ client.id }}">
 
                                             <div class="avatar_wrap"><img class="avatar" src="{{ client.avatar }}"></div>
                                             <div class="info">
@@ -57,23 +67,7 @@
                 <div id="vernierContainer" style="width: 32px; position: relative; float: left; overflow: hidden; margin-top: 135px; visibility: visible; height: 42px;">
                     <div class="activeChatVernier" style="top: -347.5px;"></div>
                 </div>
-                <div class="chat lightBorder" style="visibility: visible;height:400px">
-                    <div class="chatContainer">
-                        <div class="chatTitle">
-                            <h2>chat</h2>
-                        </div>
-                        <div class="chatScorll" id="message"></div>
-                        <div id="chat_editor" class="chatOperator lightBorder">
-                            <div class="inputArea">
-                                <form id="subform">
-                                    <a id="btnSend" href="#" class="chatSend"><b>发送</b></a>
-                                    <textarea type="text" id="textInput" class="chatInput lightBorder"></textarea>
-                                    <div id="add_face_btn" class="btn_face">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                <div id="chat_containers" class="chat lightBorder" style="visibility: visible;height:400px">
                     <div id="emoji_face" class="emoji-face">
                         <ul>
                             <li>:bowtie:</li>
@@ -143,8 +137,28 @@
         </div>
     </div>
 
+    <script type="text/template" id="tpl_chatcontainer">
+        <div id="{0}" class="chatContainer" style="display:none">
+            <div class="chatTitle">
+                <h2>{1}</h2>
+            </div>
+            <div class="chatScorll" id="message"></div>
+            <div id="chat_editor" class="chatOperator lightBorder">
+                <div class="inputArea">
+                    <form class="sendForm">
+                        <input type="hidden" name="message_to" value="{2}">
+                        <a href="#" class="chatSend"><b>发送</b></a>
+                        <textarea class="chatInput lightBorder"></textarea>
+                        <div class="btn_face">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </script>
+
     <script type="text/template" id="tpl_chatmember">
-        <div id="{3}" class="chatListColumn">
+        <div id="{3}" class="chatListColumn" target="#chat-{4}">
             <div class="avatar_wrap"><img class="avatar" src="{0}"></div>
             <div class="info">
                 <div class="nickName">
@@ -175,7 +189,7 @@
 
         var tpl_chatItem = $("#tpl_chatItem").html();
 
-         //emoji config
+        //emoji config
         emojify.setConfig({
             emojify_tag_type: 'img',
             emoticons_enabled: true,
@@ -190,17 +204,27 @@
 
         $(function(){
 
-            $('#subform').submit(function(event){
-                var value = $('#textInput').val();
-                $.post("./chat", { data: value }, function(data){
-                    $("#data").val('');
-                });
-                $('#textInput').val("");
-                return false;
+            //##############################页面初始化
+            var tpl_chatcontainer = $("#tpl_chatcontainer").html()
+                    .replace("{0}", "all")
+                    .replace("{1}", "群聊中")
+            $("#chat_containers").empty().append(tpl_chatcontainer)
+            $("#all").fadeIn(500);
+
+            //################################ 用户列表点击处理
+            $("#chatMember").delegate(".chatListColumn","click", function(){
+
+                var target = $(this).attr("target");
+                if(target!=undefined){
+                    var _class = $(target).attr("class")
+                    $("."+_class).hide();
+                    $(target).fadeIn(500);
+                }
+
             });
 
-            //#############################表情支持
-            $("#add_face_btn").click(function(e){
+            //############################## 表情支持
+            $(".btn_face").click(function(e){
 
                 var xx = (e.pageX || e.clientX + document.body.scrollLeft)-290;
                 var yy = (e.pageY || e.clientY + document.boyd.scrollTop)-155;
@@ -217,11 +241,16 @@
 
             });
 
-            //#####################################发送信息
-            $("#btnSend").click(function(){
-                $('#subform').submit()
+            //##################################### 发送信息
+            $("body").on('click', '.chatSend', function(){
+
+                console.log(this)
+                var $from = $(this).parent('form')
+                $from.submit()
                 return false
+
             });
+
 
             //ctrl+Enter发送信息
             $("#textInput").keyup(function(e){
@@ -230,11 +259,23 @@
                      //需要执行的代码
                     $("#btnSend").click();
                 }
-                console.log(e)
 
             });
 
+            $("body").delegate('.sendForm', 'submit', function(){
 
+                var _textarea = $(this).find('textarea')
+                var value = _textarea.val()
+
+                $.post("./chat", { data: value }, function(data){
+                    $("#data").val('');
+                });
+                _textarea.val("");
+                return false;
+
+            });
+
+            //####################### websocket 消息处理
             if ("WebSocket" in window) {
 
                 var curWwwPath=window.document.location.href;
@@ -249,6 +290,8 @@
                     obj = eval("("+event.data+")")
 
                     if(obj.type=="normal"){
+
+                        console.log(obj)
 
                         var tpl = tpl_chatItem.replace("{0}", obj.message)
                             .replace("{1}", obj.avatar)
@@ -266,16 +309,29 @@
                     }else if(obj.type=="add"){
 
                         for(var i=0;i<obj.clients.length;i++){
+
+                            //更新用户列表项
                             //有新成员加入
-                            client = obj.clients[i]
+                            var client = obj.clients[i]
                             var length = $("#"+client.id).length
                             if(length==0){
                                 var tpl_chatmember = $("#tpl_chatmember").html()
-                                .replace("{0}", client.avatar)
-                                .replace("{1}", client.nickname)
-                                .replace("{2}", "")
-                                .replace("{3}", client.id)
+                                    .replace("{0}", client.avatar)
+                                    .replace("{1}", client.nickname)
+                                    .replace("{2}", "")
+                                    .replace("{3}", client.id)
+                                    .replace("{4}", client.id)
                                 $("#chatMember").append(tpl_chatmember)
+                            }
+
+                            //更新聊天面板项
+                            var length = $("#chat-"+client.id).length
+                            if(length==0){
+                                var tpl_chatcontainer = $("#tpl_chatcontainer").html()
+                                        .replace("{0}", "chat-"+client.id)
+                                        .replace("{1}", "与"+client.nickname+"聊天中...")
+                                        .replace("{2}", client.id)
+                                $("#chat_containers").append(tpl_chatcontainer)
                             }
 
                         }

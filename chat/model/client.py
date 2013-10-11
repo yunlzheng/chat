@@ -9,7 +9,7 @@ class Client():
         self.websocket_handler = websocket_handler
         self.nickname = nickname
         self.email = email
-        self.avatar = getAvatar(self.email)
+        self.avatar = getAvatar(self.email, name=self.nickname)
 
     def __str__(self):
         return self.id

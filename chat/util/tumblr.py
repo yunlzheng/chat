@@ -21,13 +21,20 @@ class Tumblr(object):
         return BeautifulSoup(content)
 
     def _getItem(self, soup):
-        imgList = soup.findAll('img', attrs={'src'})
-        return imgList[0]
+        imgSrcPattern = r'''<img\s*src\s*="?(\S+)"?'''
+        imgList = soup.findAll('img')
+        img = imgList[0]
+        pattern=re.compile(r"""<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?>""",re.I)
+        m = pattern.findall(str(img))
+        return m[0]
 
     def get_fullbackground(self):
-        url = "https://www.tumblr.com/"
-        self.soup = self._getSoup(url)
-        return self._getItem(self.soup)
+        try:
+            url = "https://www.tumblr.com/"
+            self.soup = self._getSoup(url)
+            return self._getItem(self.soup)
+        except Exception as ex:
+            return None
 
 
 if __name__=="__main__":

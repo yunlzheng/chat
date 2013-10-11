@@ -9,9 +9,14 @@ from chat.util.tumblr import Tumblr
 
 class AuthHandler(BaseHandler):
 
+
+    def initialize(self):
+        tumblr = Tumblr()
+        self.back_image = tumblr.get_fullbackground()
+
     def get(self):
-        
-        self.render("login.html", error=None)
+
+        self.render("login.html", error=None, background = self.back_image)
 
     def post(self):
         nickname = self.get_argument("nickname")
@@ -19,7 +24,7 @@ class AuthHandler(BaseHandler):
         clients = ChatSigletonDefine.get_singleton_instance()._CLIENTS_MAP
         for key in clients.keys():
             if clients[key].email == email:
-                self.render("login.html", error="邮箱正在使用中...")
+                self.render("login.html", error="邮箱正在使用中...", background = None)
         self.set_secure_cookie('email', email)
         self.set_secure_cookie('nickname', nickname)
         self.redirect("/chat")

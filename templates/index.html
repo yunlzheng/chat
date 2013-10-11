@@ -12,9 +12,11 @@
     </script>
   </head>
   <body>
-    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url('https://gs1.wac.edgecastcdn.net/8019B6/data.tumblr.com/e4a9352696f9b0e243dae94323f8d61a/tumblr_mud0uvcmVl1qzoi69o1_1280.jpg');">
-        <img id="fullscreen_post_image" src="https://gs1.wac.edgecastcdn.net/8019B6/data.tumblr.com/e4a9352696f9b0e243dae94323f8d61a/tumblr_mud0uvcmVl1qzoi69o1_1280.jpg" alt="Posted by neaq">
+    {% if background %}
+    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url({{ background }});">
+        <!--<img id="fullscreen_post_image" src="{{ background }}" alt="Posted by neaq">-->
     </div>
+    {% end %}
     <div id="container">
         <div id="chat" class="chatPanel normalPanel">
             <div class="content">

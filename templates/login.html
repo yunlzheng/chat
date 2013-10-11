@@ -7,7 +7,11 @@
     <link href="/static/css/login.css" rel="stylesheet">
   </head>
   <body>
-
+   {% if background %}
+    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url({{ background }});">
+        <!--<img id="fullscreen_post_image" src="{{ background }}" alt="Posted by neaq">-->
+    </div>
+   {% end %}
     <div id="loginContainer">
       <div class="main">
         <div class="loginPanel">
@@ -20,8 +24,10 @@
                         <span class="label label-warning">{{ error }}</span>
                         <br/><br/>
                     {% end %}
+                    <div>
                     <input name="email" type="email" class="top" placeholder="邮箱地址"/>
                     <input name="nickname" type="text" class="bottom" placeholder="昵称"/>
+                    </div>
                     <button type="submit">进入</button>
                 </form>
             </div>

@@ -47,6 +47,7 @@ html, body {
 #loginContainer .loginPanel .enlogoTitle h1{
     font-size: 34px;
     font-weight: bolder;
+    color: rgb(221, 221, 221);
 }
 
 #loginContainer .loginPanel input{

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/util/tumblr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/__init__.py" afterPath="$PROJECT_DIR$/chat/util/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/auth.py" afterPath="$PROJECT_DIR$/chat/handler/auth.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,39 +29,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="119" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.108892925" vertical-offset="720" max-vertical-offset="3900">
+            <state line="42" column="38" selection-start="3459" selection-end="3459" vertical-scroll-proportion="-4.137931" vertical-offset="720" max-vertical-offset="3900">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1381509180005" expanded="true" signature="8617:8629" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8630:9291" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8666:8714" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8666:8714" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8825:9276" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8865:9257" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="8909:9234" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9175:9206" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9425:9797" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9530:9782" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9569:9654" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9696:9763" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9899:10112" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="9917:10097" placeholder="..." />
-                <marker date="1381509180005" expanded="true" signature="10061:10071" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8623:8635" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8636:9297" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8672:8720" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8672:8720" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8831:9282" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8871:9263" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="8915:9240" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9181:9212" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9431:9803" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9536:9788" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9575:9660" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9702:9769" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9905:10118" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="9923:10103" placeholder="..." />
+                <marker date="1381509241813" expanded="true" signature="10067:10077" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/application.js">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="10" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1960">
+            <state line="22" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tumblr.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/util/tumblr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="49" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="820">
+              <folding>
+                <element signature="e#16#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeautifulSoup.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.virtualenvs/chat/lib/python2.7/site-packages/BeautifulSoup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="834" column="8" selection-start="31578" selection-end="31578" vertical-scroll-proportion="0.0" vertical-offset="16727" max-vertical-offset="40460">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="argparse.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python2.7/argparse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1686" column="8" selection-start="60516" selection-end="60516" vertical-scroll-proportion="0.0" vertical-offset="33451" max-vertical-offset="46920">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="8" selection-start="259" selection-end="259" vertical-scroll-proportion="0.2360877" vertical-offset="100" max-vertical-offset="920">
+              <folding>
+                <element signature="e#16#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,10 +124,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/chat/handler/auth.py" />
         <option value="$PROJECT_DIR$/chat/handler/message.py" />
         <option value="$PROJECT_DIR$/chat/model/client.py" />
         <option value="$PROJECT_DIR$/templates/emoji.html" />
@@ -91,11 +133,13 @@
         <option value="$PROJECT_DIR$/chat/app.py" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/chat/handler/main.py" />
-        <option value="$PROJECT_DIR$/chat/util/__init__.py" />
         <option value="$PROJECT_DIR$/static/listener.js" />
         <option value="$PROJECT_DIR$/chat/core/listener.py" />
         <option value="$PROJECT_DIR$/static/application.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/chat/util/__init__.py" />
+        <option value="$PROJECT_DIR$/chat/util/tumblr.py" />
+        <option value="$PROJECT_DIR$/chat/handler/auth.py" />
       </list>
     </option>
   </component>
@@ -160,7 +204,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="chat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -174,11 +218,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="chat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -189,6 +233,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="Z:/vms" />
     <property name="FullScreen" value="false" />
@@ -201,7 +246,26 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.tumblr">
+    <configuration default="false" name="tumblr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chat/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="chat" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chat/util/tumblr.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,7 +393,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.tumblr" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.tumblr" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -365,11 +436,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34973902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34954408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34510434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,28 +484,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chat/handler/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="1" selection-start="3173" selection-end="3186" vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2356" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24906367" vertical-offset="114" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="401" selection-end="402" vertical-scroll-proportion="-6.92" vertical-offset="93" max-vertical-offset="798" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/model/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
@@ -477,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/listener.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="42" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1960">
@@ -509,33 +551,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="10" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1960">
+        <state line="29" column="10" selection-start="833" selection-end="833" vertical-scroll-proportion="0.9780776" vertical-offset="0" max-vertical-offset="1960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1686" column="8" selection-start="60516" selection-end="60516" vertical-scroll-proportion="0.0" vertical-offset="33451" max-vertical-offset="46920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/chat/lib/python2.7/site-packages/BeautifulSoup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="834" column="8" selection-start="31578" selection-end="31578" vertical-scroll-proportion="0.0" vertical-offset="16187" max-vertical-offset="40460">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="119" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.108892925" vertical-offset="720" max-vertical-offset="3900">
+        <state line="42" column="38" selection-start="3459" selection-end="3459" vertical-scroll-proportion="-4.137931" vertical-offset="720" max-vertical-offset="3900">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1381509180005" expanded="true" signature="8617:8629" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8630:9291" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8666:8714" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8666:8714" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8825:9276" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8865:9257" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="8909:9234" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9175:9206" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9425:9797" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9530:9782" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9569:9654" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9696:9763" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9899:10112" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="9917:10097" placeholder="..." />
-            <marker date="1381509180005" expanded="true" signature="10061:10071" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8623:8635" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8636:9297" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8672:8720" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8672:8720" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8831:9282" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8871:9263" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="8915:9240" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9181:9212" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9431:9803" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9536:9788" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9575:9660" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9702:9769" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9905:10118" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="9923:10103" placeholder="..." />
+            <marker date="1381509241813" expanded="true" signature="10067:10077" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/util/tumblr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="820">
+          <folding>
+            <element signature="e#16#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="8" selection-start="259" selection-end="259" vertical-scroll-proportion="0.2360877" vertical-offset="100" max-vertical-offset="920">
+          <folding>
+            <element signature="e#16#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

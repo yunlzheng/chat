@@ -2,40 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/emoji.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat.jpg" afterPath="$PROJECT_DIR$/static/images/chat.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" afterPath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/login.jpg" afterPath="$PROJECT_DIR$/static/images/login.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/navbar_sprite.png" afterPath="$PROJECT_DIR$/static/images/navbar_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/power_off.png" afterPath="$PROJECT_DIR$/static/images/power_off.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/__init__.py" afterPath="$PROJECT_DIR$/chat/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/core/__init__.py" afterPath="$PROJECT_DIR$/chat/core/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/__init__.py" afterPath="$PROJECT_DIR$/chat/handler/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/model/__init__.py" afterPath="$PROJECT_DIR$/chat/model/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/application.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/listener.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/__init__.py" afterPath="$PROJECT_DIR$/chat/util/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/app.py" afterPath="$PROJECT_DIR$/chat/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/auth.py" afterPath="$PROJECT_DIR$/chat/handler/auth.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/base.py" afterPath="$PROJECT_DIR$/chat/handler/base.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/chat.iml" afterPath="$PROJECT_DIR$/.idea/chat.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/model/client.py" afterPath="$PROJECT_DIR$/chat/model/client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/define.py" afterPath="$PROJECT_DIR$/chat/define.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/emojify.css" afterPath="$PROJECT_DIR$/static/css/emojify.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/emojify.js" afterPath="$PROJECT_DIR$/static/emojify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/core/listener.py" afterPath="$PROJECT_DIR$/chat/core/listener.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/login.css" afterPath="$PROJECT_DIR$/static/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/main.py" afterPath="$PROJECT_DIR$/chat/handler/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/message.py" afterPath="$PROJECT_DIR$/chat/handler/message.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/router.py" afterPath="$PROJECT_DIR$/chat/router.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chat.iws" />
@@ -59,29 +36,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="31" selection-start="8934" selection-end="8934" vertical-scroll-proportion="0.6169355" vertical-offset="2525" max-vertical-offset="6840">
+            <state line="143" column="17" selection-start="8579" selection-end="8579" vertical-scroll-proportion="9.421053" vertical-offset="3397" max-vertical-offset="3920">
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1381484575328" expanded="true" signature="8520:8532" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="8533:9207" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="8569:8617" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="8741:9192" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="8781:9173" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="8825:9150" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9091:9122" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9276:9718" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9341:9713" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9446:9698" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9485:9570" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9612:9679" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9815:10028" placeholder="..." />
-                <marker date="1381484575328" expanded="true" signature="9833:10013" placeholder="..." />
-                <marker date="1381484575328" expanded="false" signature="9977:9987" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1381506153078" expanded="false" signature="8613:8625" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="8626:9287" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="8662:8710" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="8821:9272" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="8861:9253" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="8905:9230" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9171:9202" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9421:9793" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9526:9778" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9565:9650" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9692:9759" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9895:10108" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="9913:10093" placeholder="..." />
+                <marker date="1381506153078" expanded="true" signature="10057:10067" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="1267" max-vertical-offset="1860">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listener.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/listener.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="42" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="29" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1160">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="43" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="760">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listener.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="75" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.6745362" vertical-offset="560" max-vertical-offset="1660">
+              <folding>
+                <element signature="e#15#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="9" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="20" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="468" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1120">
+              <folding>
+                <element signature="e#16#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="20" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,30 +164,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/emojify.min.css" />
-        <option value="$PROJECT_DIR$/static/emojify.js" />
-        <option value="$PROJECT_DIR$/chat/handler/__init__.py" />
-        <option value="$PROJECT_DIR$/chat/router.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/chat/core/listener.py" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/chat/handler/auth.py" />
-        <option value="$PROJECT_DIR$/chat/app.py" />
         <option value="$PROJECT_DIR$/chat/handler/message.py" />
-        <option value="$PROJECT_DIR$/chat/handler/main.py" />
         <option value="$PROJECT_DIR$/chat/model/client.py" />
-        <option value="$PROJECT_DIR$/chat/util/__init__.py" />
         <option value="$PROJECT_DIR$/templates/emoji.html" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/chat/app.py" />
+        <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/chat/handler/main.py" />
+        <option value="$PROJECT_DIR$/chat/util/__init__.py" />
+        <option value="$PROJECT_DIR$/static/application.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/listener.js" />
+        <option value="$PROJECT_DIR$/chat/core/listener.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-1" />
+    <option name="y" value="-5" />
+    <option name="width" value="1368" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,6 +234,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -185,8 +259,8 @@
     <property name="last_opened_file_path" value="Z:/vms" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -194,26 +268,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="chat" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,9 +355,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -373,15 +424,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="-5" width="1368" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17272727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34973902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -389,6 +439,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -411,9 +462,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -428,18 +479,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.26950353" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/define.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="315" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="34" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -447,64 +486,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/tornado-1.2.1-py2.7.egg/tornado/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="406" column="49" selection-start="15064" selection-end="15064" vertical-scroll-proportion="0.0" vertical-offset="7152" max-vertical-offset="30723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="1" selection-start="3173" selection-end="3186" vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2356">
-          <folding />
-        </state>
+        <state line="116" column="1" selection-start="3173" selection-end="3186" vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2356" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24906367" vertical-offset="114" max-vertical-offset="874">
-          <folding />
-        </state>
+        <state line="13" column="57" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24906367" vertical-offset="114" max-vertical-offset="874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="401" selection-end="402" vertical-scroll-proportion="-6.92" vertical-offset="93" max-vertical-offset="798">
-          <folding>
-            <element signature="e#16#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/1976821730/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1831" column="8" selection-start="62863" selection-end="62863" vertical-scroll-proportion="0.33274022" vertical-offset="34602" max-vertical-offset="96368">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="52" selection-start="395" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="760">
-          <folding>
-            <element signature="e#16#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
+        <state line="14" column="74" selection-start="401" selection-end="402" vertical-scroll-proportion="-6.92" vertical-offset="93" max-vertical-offset="798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/model/client.py">
@@ -514,50 +508,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
+    <entry file="file://$PROJECT_DIR$/templates/emoji.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="394" selection-end="394" vertical-scroll-proportion="0.50711745" vertical-offset="0" max-vertical-offset="562">
+        <state line="3" column="23" selection-start="72" selection-end="72" vertical-scroll-proportion="0.10674157" vertical-offset="0" max-vertical-offset="1273" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="468" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1120">
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="952" selection-end="952" vertical-scroll-proportion="1.0142349" vertical-offset="0" max-vertical-offset="1197">
-          <folding>
-            <element signature="e#16#27#0" expanded="false" />
-          </folding>
+        <state line="19" column="29" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1160">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/emoji.html">
+    <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="72" selection-end="72" vertical-scroll-proportion="0.10674157" vertical-offset="0" max-vertical-offset="1273">
+        <state line="9" column="9" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="31" selection-start="8934" selection-end="8934" vertical-scroll-proportion="0.6169355" vertical-offset="2525" max-vertical-offset="6840">
+        <state line="143" column="17" selection-start="8579" selection-end="8579" vertical-scroll-proportion="9.421053" vertical-offset="3397" max-vertical-offset="3920">
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1381484575328" expanded="true" signature="8520:8532" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="8533:9207" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="8569:8617" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="8741:9192" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="8781:9173" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="8825:9150" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9091:9122" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9276:9718" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9341:9713" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9446:9698" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9485:9570" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9612:9679" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9815:10028" placeholder="..." />
-            <marker date="1381484575328" expanded="true" signature="9833:10013" placeholder="..." />
-            <marker date="1381484575328" expanded="false" signature="9977:9987" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1381506153078" expanded="false" signature="8613:8625" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="8626:9287" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="8662:8710" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="8821:9272" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="8861:9253" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="8905:9230" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9171:9202" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9421:9793" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9526:9778" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9565:9650" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9692:9759" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9895:10108" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="9913:10093" placeholder="..." />
+            <marker date="1381506153078" expanded="true" signature="10057:10067" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/listener.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="75" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.6745362" vertical-offset="560" max-vertical-offset="1660">
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,11 +14,12 @@ __author__ = 'zheng'
 PROJECT_DIR = dirname(dirname(abspath(__file__)))
 TEMPLATE_DIR = os.path.join(PROJECT_DIR, 'templates')
 STATIC_DIR = os.path.join(PROJECT_DIR, 'static')
+CONF_DIR = os.path.join(PROJECT_DIR, 'conf')
+CONF_FILE = CONF_DIR+os.path.sep+"application.conf"
 
 define('redis_host', default='localhost')
 define('redis_db', default=2, type=int)
 define('redis_channel', default='web_chat', help='message pubsub channel')
-
 
 class Application(tornado.web.Application):
 
@@ -41,7 +42,8 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **settings)
 
 if __name__ == "__main__":
-    tornado.options.parse_command_line()
+    print CONF_FILE
+
     application = Application()
 
 

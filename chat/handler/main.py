@@ -23,11 +23,13 @@ class MainHandler(BaseHandler):
     @tornado.web.authenticated
     def post(self):
         message = self.get_argument("data")
+        to = self.get_argument("to")
         data = {
             "email": self.get_secure_cookie('email'),
             "nickname": self.get_secure_cookie('nickname'),
             "avatar": getAvatar(self.get_secure_cookie('email')),
             "message": message,
+            "to": to,
             "type": "normal"
         }
         r = self.settings['redis']

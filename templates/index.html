@@ -7,6 +7,9 @@
     <link href="/static/css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/emojify.css">
     <script src="/static/emojify.js"></script>
+    <script type="text/javascript">
+         var current_user = '{{ email }}'
+    </script>
   </head>
   <body>
     <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url('https://gs1.wac.edgecastcdn.net/8019B6/data.tumblr.com/e4a9352696f9b0e243dae94323f8d61a/tumblr_mud0uvcmVl1qzoi69o1_1280.jpg');">
@@ -26,7 +29,7 @@
                                     <span class="operaterBoxTitle left">Log Out</span> <div class="clr"></div> </a> </div>
                                 </div>
                             </div>
-                            <a href="/logout"><i class="icon-off"></i><a>
+                            <a href="/logout"><i class="icon-off"></i></a>
                        </div>
                     </div>
                     <div class="listContentWrap">
@@ -142,7 +145,7 @@
             <div class="chatTitle">
                 <h2>{1}</h2>
             </div>
-            <div class="chatScorll" id="message"></div>
+            <div class="chatScorll"></div>
             <div id="chat_editor" class="chatOperator lightBorder">
                 <div class="inputArea">
                     <form class="sendForm">
@@ -181,174 +184,7 @@
         </div>
     </script>
 
-    <script type="text/javascript">
-
-        var current_user = '{{ email }}'
-
-        //Template
-
-        var tpl_chatItem = $("#tpl_chatItem").html();
-
-        //emoji config
-        emojify.setConfig({
-            emojify_tag_type: 'img',
-            emoticons_enabled: true,
-            people_enabled: true,
-            nature_enabled: true,
-            objects_enabled: true,
-            places_enabled: true,
-            symbols_enabled: true
-        });
-
-         emojify.run();
-
-        $(function(){
-
-            //##############################页面初始化
-            var tpl_chatcontainer = $("#tpl_chatcontainer").html()
-                    .replace("{0}", "all")
-                    .replace("{1}", "群聊中")
-            $("#chat_containers").empty().append(tpl_chatcontainer)
-            $("#all").fadeIn(500);
-
-            //################################ 用户列表点击处理
-            $("#chatMember").delegate(".chatListColumn","click", function(){
-
-                var target = $(this).attr("target");
-                if(target!=undefined){
-                    var _class = $(target).attr("class")
-                    $("."+_class).hide();
-                    $(target).fadeIn(500);
-                }
-
-            });
-
-            //############################## 表情支持
-            $(".btn_face").click(function(e){
-
-                var xx = (e.pageX || e.clientX + document.body.scrollLeft)-290;
-                var yy = (e.pageY || e.clientY + document.boyd.scrollTop)-155;
-                $("#emoji_face").css("top",yy).css("left",xx).toggle();
-
-            });
-
-            $("#emoji_face").delegate("li", "click", function(e){
-
-                var emoji = $($(this).find('img')[0]).attr('title');
-                tmp = $("#textInput").val()+emoji
-                $("#textInput").val(tmp);
-                emojify.run();
-
-            });
-
-            //##################################### 发送信息
-            $("body").on('click', '.chatSend', function(){
-
-                console.log(this)
-                var $from = $(this).parent('form')
-                $from.submit()
-                return false
-
-            });
-
-
-            //ctrl+Enter发送信息
-            $("#textInput").keyup(function(e){
-
-                if(e.ctrlKey && e.which == 13 || e.which == 10) { // Ctrl+Enrer(回车)
-                     //需要执行的代码
-                    $("#btnSend").click();
-                }
-
-            });
-
-            $("body").delegate('.sendForm', 'submit', function(){
-
-                var _textarea = $(this).find('textarea')
-                var value = _textarea.val()
-
-                $.post("./chat", { data: value }, function(data){
-                    $("#data").val('');
-                });
-                _textarea.val("");
-                return false;
-
-            });
-
-            //####################### websocket 消息处理
-            if ("WebSocket" in window) {
-
-                var curWwwPath=window.document.location.href;
-                var pathName=window.document.location.pathname;
-                var pos=curWwwPath.indexOf(pathName);
-                var localhostPaht=curWwwPath.substring(7,pos);
-
-                var ws = new WebSocket('ws://'+localhostPaht+'/websocket')
-
-                ws.onmessage = function(event){
-
-                    obj = eval("("+event.data+")")
-
-                    if(obj.type=="normal"){
-
-                        console.log(obj)
-
-                        var tpl = tpl_chatItem.replace("{0}", obj.message)
-                            .replace("{1}", obj.avatar)
-                            .replace("{3}", obj.nickname)
-
-                        if(obj.email==current_user){
-                            tpl = tpl.replace("{2}", "me")
-                        }else{
-                            tpl = tpl.replace("{2}", "you")
-                        }
-
-                        $("#message").append(tpl)
-                        emojify.run();
-
-                    }else if(obj.type=="add"){
-
-                        for(var i=0;i<obj.clients.length;i++){
-
-                            //更新用户列表项
-                            //有新成员加入
-                            var client = obj.clients[i]
-                            var length = $("#"+client.id).length
-                            if(length==0){
-                                var tpl_chatmember = $("#tpl_chatmember").html()
-                                    .replace("{0}", client.avatar)
-                                    .replace("{1}", client.nickname)
-                                    .replace("{2}", "")
-                                    .replace("{3}", client.id)
-                                    .replace("{4}", client.id)
-                                $("#chatMember").append(tpl_chatmember)
-                            }
-
-                            //更新聊天面板项
-                            var length = $("#chat-"+client.id).length
-                            if(length==0){
-                                var tpl_chatcontainer = $("#tpl_chatcontainer").html()
-                                        .replace("{0}", "chat-"+client.id)
-                                        .replace("{1}", "与"+client.nickname+"聊天中...")
-                                        .replace("{2}", client.id)
-                                $("#chat_containers").append(tpl_chatcontainer)
-                            }
-
-                        }
-
-                    }else if(obj.type=='out'){
-                        var select = "#"+obj.id;
-                        $(select).fadeOut(1000).remove();
-                    }
-                }
-
-            } else {
-
-              alert("WebSocket not supported");
-
-            }
-
-        });
-    </script>
+    <script type="text/javascript" src="/static/listener.js"></script>
+    <script type="text/javascript" src="/static/application.js"></script>
   </body>
 </html>

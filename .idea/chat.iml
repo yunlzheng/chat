@@ -2,11 +2,11 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Remote Python 2.7.3(ssh://ubuntu@192.168.119.138:22/home/ubuntu/.virtualenvs/workspace/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7.3 virtualenv at ~/.virtualenvs/chat" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
-    <option name="myDocStringFormat" value="Plain" />
+    <option name="myDocStringFormat" value="Epytext" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="Unittests" />

@@ -34,7 +34,7 @@ $(function(){
     });
 
     //############################## 表情支持
-    $(".btn_face").click(function(e){
+    $("body").on('click', '.btn_face', function(e){
 
         var xx = (e.pageX || e.clientX + document.body.scrollLeft)-290;
         var yy = (e.pageY || e.clientY + document.boyd.scrollTop)-155;
@@ -45,8 +45,13 @@ $(function(){
     $("#emoji_face").delegate("li", "click", function(e){
 
         var emoji = $($(this).find('img')[0]).attr('title');
-        tmp = $("#textInput").val()+emoji
-        $("#textInput").val(tmp);
+        $(".chatContainer").each(function(){
+            if($(this).css('display')=='block'){
+                var $textarea =  $(this).find('textarea');
+                var tmp =$textarea.val()+emoji;
+                $textarea.val(tmp);
+            }
+        });
         emojify.run();
 
     });

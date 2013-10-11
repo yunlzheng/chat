@@ -392,7 +392,7 @@ a.chatSend b {
 }
 
 /**emoji表情支持*/
-.chat .emoji-face{
+.emoji-face{
 
         display: none;
         position: absolute;
@@ -404,13 +404,13 @@ a.chatSend b {
         background: #ddd;
 }
 
-.chat .emoji-face ul li{
+.emoji-face ul li{
     float: left;
     display: block;
     padding: 2px;
 }
 
-.chat .emoji-face ul li:hover{
+.emoji-face ul li:hover{
 
 }
 .icon-off{

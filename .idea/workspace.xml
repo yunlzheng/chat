@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/application.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/listener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/__init__.py" afterPath="$PROJECT_DIR$/chat/util/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/app.py" afterPath="$PROJECT_DIR$/chat/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/chat.iml" afterPath="$PROJECT_DIR$/.idea/chat.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/application.js" afterPath="$PROJECT_DIR$/static/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/core/listener.py" afterPath="$PROJECT_DIR$/chat/core/listener.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/main.py" afterPath="$PROJECT_DIR$/chat/handler/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chat.iws" />
@@ -39,108 +31,35 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="17" selection-start="8579" selection-end="8579" vertical-scroll-proportion="9.421053" vertical-offset="3397" max-vertical-offset="3920">
+            <state line="152" column="33" selection-start="9054" selection-end="9062" vertical-scroll-proportion="-13.793103" vertical-offset="2640" max-vertical-offset="3900">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1381506153078" expanded="false" signature="8613:8625" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="8626:9287" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="8662:8710" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="8821:9272" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="8861:9253" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="8905:9230" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9171:9202" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9421:9793" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9526:9778" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9565:9650" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9692:9759" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9895:10108" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="9913:10093" placeholder="..." />
-                <marker date="1381506153078" expanded="true" signature="10057:10067" placeholder="..." />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1381507990532" expanded="true" signature="8592:8604" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8605:9266" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8641:8689" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8641:8689" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8800:9251" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8840:9232" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="8884:9209" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9150:9181" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9400:9772" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9505:9757" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9544:9629" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9671:9738" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9874:10087" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="9892:10072" placeholder="..." />
+                <marker date="1381507990532" expanded="true" signature="10036:10046" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="1267" max-vertical-offset="1860">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listener.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/listener.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="42" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="29" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1160">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="760">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listener.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="75" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.6745362" vertical-offset="560" max-vertical-offset="1660">
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/util/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/application.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="468" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1120">
-              <folding>
-                <element signature="e#16#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+            <state line="51" column="25" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.80944353" vertical-offset="540" max-vertical-offset="1960">
               <folding />
             </state>
           </provider>
@@ -176,10 +95,10 @@
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/chat/handler/main.py" />
         <option value="$PROJECT_DIR$/chat/util/__init__.py" />
-        <option value="$PROJECT_DIR$/static/application.js" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/listener.js" />
         <option value="$PROJECT_DIR$/chat/core/listener.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/application.js" />
       </list>
     </option>
   </component>
@@ -245,6 +164,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,36 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="17" selection-start="8579" selection-end="8579" vertical-scroll-proportion="9.421053" vertical-offset="3397" max-vertical-offset="3920">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1381506153078" expanded="false" signature="8613:8625" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="8626:9287" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="8662:8710" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="8821:9272" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="8861:9253" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="8905:9230" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9171:9202" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9421:9793" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9526:9778" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9565:9650" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9692:9759" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9895:10108" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="9913:10093" placeholder="..." />
-            <marker date="1381506153078" expanded="true" signature="10057:10067" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/listener.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="42" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1960">
@@ -600,6 +507,39 @@
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="33" selection-start="9054" selection-end="9062" vertical-scroll-proportion="-13.793103" vertical-offset="2640" max-vertical-offset="3900">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1381507990532" expanded="true" signature="8592:8604" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8605:9266" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8641:8689" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8641:8689" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8800:9251" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8840:9232" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="8884:9209" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9150:9181" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9400:9772" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9505:9757" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9544:9629" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9671:9738" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9874:10087" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="9892:10072" placeholder="..." />
+            <marker date="1381507990532" expanded="true" signature="10036:10046" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="25" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.80944353" vertical-offset="540" max-vertical-offset="1960">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -39,6 +39,12 @@ $(function(){
     //###################页面事件监听
     (function(){
 
+        //页面刷新或者管理事件
+        $(window).bind('beforeunload', function(e){
+            console.log(e);
+            return false;
+        });
+
         //用户列表点击处理
         $("#chatMember").delegate(".chatListColumn","click", function(){
 

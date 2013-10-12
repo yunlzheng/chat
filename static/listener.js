@@ -43,7 +43,7 @@ $(function(){
                 var $scroll = $container.find(".chatScorll");
                 $scroll.append(tpl);
                 $scroll.scrollTop($scroll[0].scrollHeight);
-               
+
                 emojify.run();
 
             }else if(obj.type=="add"){

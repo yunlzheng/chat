@@ -84,7 +84,6 @@ $(function(){
 
         });
 
-
         //ctrl+Enter发送信息
         $("body").delegate('.chatInput', 'keyup', function(e){
 

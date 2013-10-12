@@ -26,25 +26,24 @@ $(function(){
                 }else{
                     tpl = tpl.replace("{2}", "you")
                 }
-
+                var $container = null;
                 if( obj.from!=undefined ){
 
                     var from = obj.from
                     var to = obj.to
-                    var $container = $("#chat-"+from);
+                    $container = $("#chat-"+from);
                     if(obj.email==current_user){
                         $container = $("#chat-" + to);
                     }
 
-                    $container.find(".chatScorll").append(tpl)
-
                 }else{
-
-                    $("#all").find('.chatScorll').append(tpl)
-
+                    $container = $("#all")
                 }
 
-
+                var $scroll = $container.find(".chatScorll");
+                $scroll.append(tpl);
+                $scroll.scrollTop($scroll[0].scrollHeight);
+               
                 emojify.run();
 
             }else if(obj.type=="add"){
@@ -73,6 +72,7 @@ $(function(){
                                 .replace("{1}", "与"+client.nickname+"聊天中...")
                                 .replace("{2}", client.id)
                         $("#chat_containers").append(tpl_chatcontainer)
+
                     }
 
                 }

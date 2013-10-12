@@ -38,7 +38,7 @@
                         <div style="height: 400px; width: 100%; overflow-y: auto; overflow-x:hidden; position: relative;">
                             <div class="listContent">
                                 <div id="chatMember" class="conversationContainer">
-                                    <div id="chat-all" class="chatListColumn" target="#all" data-target="groups">
+                                    <div id="chat-all" class="chatListColumn active" target="#all" data-target="groups">
                                             <div class="avatar_wrap"><img class="avatar" src="/static/images/groups.png"></div>
                                             <div class="info">
                                                 <div class="nickName">
@@ -47,7 +47,9 @@
                                                 <div class="descWrapper">
                                                     <p class="desc">一起聊才开心</p>
                                                 </div>
+
                                             </div>
+                                            <span class="label label-info" style="display:none">0</span>
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +162,7 @@
                     <p class="desc">{2}</p>
                 </div>
             </div>
+            <span class="label label-info" style="display:none">0</span>
         </div>
     </script>
 

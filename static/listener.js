@@ -3,18 +3,43 @@ $(function(){
     //#################### 消息提醒模块
     (function(){
 
+        var snd = new Audio("/static/mp3/notification.mp3"); // buffers automatically when created
+
         $(window).on('message', function(event, data){
 
             if(data.email==current_user){
+
                 //自己的消息不提醒
                 return;
+
             }else{
+
+                console.log(data);
+                //显示未读消息的条数
+                var $target = $(".chatContainer[data-main='"+data.email+"']");
+
+                if((data.to_email==current_user) && ($target.is(":visible")==false)){
+
+                    var $list_target = $(".chatListColumn[data-target='"+data.email+"']");
+                    var $info = $list_target.find('.label-info');
+                    var num =parseInt( $info.html())+1;
+                    $info.show().html(num);
+
+
+                }
+
+                if((data.to_email=='groups') && ($("#all").is(':visible')==false)){
+
+                   var $info = $("#chat-all").find('.label-info');
+                   var num =parseInt( $info.html())+1;
+                   $info.show().html(num);
+
+                }
 
                  //调用html5 audio播放提示音
                  var hasVideo = !!(document.createElement('video').canPlayType);
                  if(hasVideo==true){
                      //播放提示音
-                     var snd = new Audio("/static/mp3/notification.mp3"); // buffers automatically when created
                      snd.play();
 
                  }
@@ -24,13 +49,12 @@ $(function(){
                      //浏览器功能检测
                      //console.log("Notifications are supported!");
                      if (window.webkitNotifications.checkPermission() == 0) {
+
                          var notification = window.webkitNotifications.createNotification(
                                 data.avatar, data.nickname+ '发来了新消息', data.message);
                          notification.show();
-
                          notification.onclick=function(){
-                            console.log(data);
-                             //TODO: bugs 群聊信息聚焦出错
+
                              //页面显示聊天面板
                              var $target = $(".chatContainer[data-main='"+data.email+"']");
                              if(data.to==''){
@@ -167,7 +191,7 @@ $(function(){
 
         } else {
 
-          alert("WebSocket not supported");
+            alert("WebSocket not supported");
 
         }
 

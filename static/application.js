@@ -49,6 +49,8 @@ $(function(){
         //用户列表点击处理
         $("#chatMember").delegate(".chatListColumn","click", function(){
 
+            $(".chatListColumn").removeClass('active');
+            $(this).addClass('active');
             var target = $(this).attr("data-target");
             if(target!=undefined){
 
@@ -56,6 +58,11 @@ $(function(){
                 var _class = $target.attr("class")
                 $("."+_class).hide();//隐藏其他面板
                 $target.fadeIn(500);
+
+                //清理消息提示数
+                var $info =$(this).find('.label-info');
+                var num =0;
+                $info.hide().html(num);
                 
             }
 

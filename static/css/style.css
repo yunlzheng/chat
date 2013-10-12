@@ -41,6 +41,10 @@ html, body {
 
 }
 
+#fullscreen_bg_load{
+    margin-top: 20px;
+}
+
 .chatPanel {
     position: relative;
     margin: 0 auto;

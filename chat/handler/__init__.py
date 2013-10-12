@@ -4,3 +4,4 @@ from chat.handler.auth import AuthHandler
 from chat.handler.auth import LogoutHandler
 from chat.handler.main import MainHandler
 from chat.handler.message import WebSocketHandler
+from chat.handler.tumblr import TumblrHandler

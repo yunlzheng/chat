@@ -12,11 +12,11 @@
     </script>
   </head>
   <body>
-    {% if background %}
-    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url({{ background }});">
-        <!--<img id="fullscreen_post_image" src="{{ background }}" alt="Posted by neaq">-->
+    <div id="fullscreen_post_bg" class="fullscreen_post_bg">
+        <div id="fullscreen_bg_load">
+            <img src="/static/images/loading_s.gif">
+        </div>
     </div>
-    {% end %}
     <div id="container">
         <div id="chat" class="chatPanel normalPanel">
             <div class="content">

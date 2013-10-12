@@ -7,11 +7,12 @@
     <link href="/static/css/login.css" rel="stylesheet">
   </head>
   <body>
-   {% if background %}
-    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url({{ background }});">
-        <!--<img id="fullscreen_post_image" src="{{ background }}" alt="Posted by neaq">-->
+
+    <div id="fullscreen_post_bg" class="fullscreen_post_bg">
+        <div id="fullscreen_bg_load">
+            <img src="/static/images/loading_s.gif">
+        </div>
     </div>
-   {% end %}
     <div id="loginContainer">
       <div class="main">
         <div class="loginPanel">
@@ -34,13 +35,6 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-
-    $(function(){
-        $("form").submit(function(){
-            return true;
-        });
-    });
-    </script>
+    <script type="text/javascript" src="/static/login.js"></script>
   </body>
 </html>

@@ -22,9 +22,8 @@ $(function(){
             url: "/background",
             type: 'get',
             success: function(result){
-                console.log(result);
-                $("#fullscreen_post_bg").css('background-image','url('+result+')');
-                $("#fullscreen_bg_load").hide();
+                 $("#fullscreen_post_bg").hide().css('background-image','url('+result+')').fadeIn(500);
+                 $("#fullscreen_bg_load").hide();
             }
 
         });

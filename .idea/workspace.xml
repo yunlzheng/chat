@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/handler/tumblr.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat.jpg" afterPath="$PROJECT_DIR$/static/images/chat.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" afterPath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/loading.gif" afterPath="$PROJECT_DIR$/static/images/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/loading_s.gif" afterPath="$PROJECT_DIR$/static/images/loading_s.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/login.jpg" afterPath="$PROJECT_DIR$/static/images/login.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/navbar_sprite.png" afterPath="$PROJECT_DIR$/static/images/navbar_sprite.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/power_off.png" afterPath="$PROJECT_DIR$/static/images/power_off.png" />
@@ -16,7 +16,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/model/__init__.py" afterPath="$PROJECT_DIR$/chat/model/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/__init__.py" afterPath="$PROJECT_DIR$/chat/util/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/app.py" afterPath="$PROJECT_DIR$/chat/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/application.js" afterPath="$PROJECT_DIR$/static/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/auth.py" afterPath="$PROJECT_DIR$/chat/handler/auth.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/base.py" afterPath="$PROJECT_DIR$/chat/handler/base.py" />
@@ -31,6 +30,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/core/listener.py" afterPath="$PROJECT_DIR$/chat/core/listener.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/login.css" afterPath="$PROJECT_DIR$/static/css/login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/login.js" afterPath="$PROJECT_DIR$/static/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/main.py" afterPath="$PROJECT_DIR$/chat/handler/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/message.py" afterPath="$PROJECT_DIR$/chat/handler/message.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -39,6 +39,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/handler/tumblr.py" afterPath="$PROJECT_DIR$/chat/handler/tumblr.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/util/tumblr.py" afterPath="$PROJECT_DIR$/chat/util/tumblr.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -64,10 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="37" selection-start="601" selection-end="601" vertical-scroll-proportion="0.29174665" vertical-offset="133" max-vertical-offset="3743">
+            <state line="148" column="42" selection-start="8521" selection-end="8521" vertical-scroll-proportion="-54.57143" vertical-offset="1284" max-vertical-offset="3743">
               <folding>
                 <marker date="1381544001666" expanded="false" signature="8380:8392" placeholder="..." />
                 <marker date="1381544001666" expanded="true" signature="8393:9054" placeholder="..." />
@@ -88,39 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="18" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2318">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="44" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-              <folding>
-                <element signature="e#16#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tumblr.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/tumblr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="router.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat/router.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="379" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+            <state line="11" column="21" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
               <folding>
                 <element signature="e#16#52#0" expanded="true" />
               </folding>
@@ -158,10 +130,19 @@
       <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="665">
+            <state line="13" column="15" selection-start="228" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="665">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="0.39145908" vertical-offset="141" max-vertical-offset="2299">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,6 +153,17 @@
             <state line="23" column="7" selection-start="561" selection-end="757" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="893">
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="25" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+              <folding>
+                <element signature="e#16#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,7 +190,6 @@
         <option value="$PROJECT_DIR$/static/listener.js" />
         <option value="$PROJECT_DIR$/chat/core/listener.py" />
         <option value="$PROJECT_DIR$/chat/util/__init__.py" />
-        <option value="$PROJECT_DIR$/chat/handler/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/chat/handler/__init__.py" />
         <option value="$PROJECT_DIR$/chat/util/tumblr.py" />
@@ -207,10 +198,11 @@
         <option value="$PROJECT_DIR$/chat/handler/auth.py" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/static/application.js" />
-        <option value="$PROJECT_DIR$/static/login.js" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/chat/handler/main.py" />
+        <option value="$PROJECT_DIR$/static/login.js" />
+        <option value="$PROJECT_DIR$/static/application.js" />
       </list>
     </option>
   </component>
@@ -572,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.27046263" vertical-offset="0" max-vertical-offset="562">
@@ -609,31 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/tumblr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/router.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="379" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
-          <folding>
-            <element signature="e#16#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-          <folding>
-            <element signature="e#16#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="984" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="2470">
@@ -648,22 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="18" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2318">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="665">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="52" selection-start="401" selection-end="441" vertical-scroll-proportion="-4.821429" vertical-offset="93" max-vertical-offset="874">
@@ -671,9 +615,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/tumblr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="109" selection-end="109" vertical-scroll-proportion="0.13523132" vertical-offset="0" max-vertical-offset="562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="44" selection-start="371" selection-end="371" vertical-scroll-proportion="0.50711745" vertical-offset="0" max-vertical-offset="912">
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/router.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding>
+            <element signature="e#16#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="37" selection-start="601" selection-end="601" vertical-scroll-proportion="0.29174665" vertical-offset="133" max-vertical-offset="3743">
+        <state line="148" column="42" selection-start="8521" selection-end="8521" vertical-scroll-proportion="-54.57143" vertical-offset="1284" max-vertical-offset="3743">
           <folding>
             <marker date="1381544001666" expanded="false" signature="8380:8392" placeholder="..." />
             <marker date="1381544001666" expanded="true" signature="8393:9054" placeholder="..." />
@@ -690,6 +668,22 @@
             <marker date="1381544001666" expanded="true" signature="9680:9860" placeholder="..." />
             <marker date="1381544001666" expanded="false" signature="9824:9834" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="228" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="665">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="0.39145908" vertical-offset="141" max-vertical-offset="2299">
+          <folding />
         </state>
       </provider>
     </entry>

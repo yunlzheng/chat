@@ -4,23 +4,21 @@ import tornado.web
 from tornado.options import options
 from chat.util import getAvatar
 from chat.handler import BaseHandler
-from chat.util.tumblr import Tumblr
+
 
 
 class MainHandler(BaseHandler):
 
     @tornado.web.authenticated
     def get(self):
-        tumblr = Tumblr()
-        self.back_image = tumblr.get_fullbackground()
+
         email = self.get_secure_cookie('email')
         nickname = self.get_secure_cookie('nickname')
         params = {
             "avatar": getAvatar(email, name=nickname),
             "email": email,
             "nickname": nickname,
-            "clients": [],
-            "background": self.back_image
+            "clients": []
         }
         self.render("index.html", **params)
 

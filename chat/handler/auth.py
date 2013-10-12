@@ -2,14 +2,11 @@
 import tornado.web
 from chat.handler import BaseHandler
 from chat.define import ChatSigletonDefine
-from chat.util.tumblr import Tumblr
 
 
 class AuthHandler(BaseHandler):
 
     def initialize(self):
-        #tumblr = Tumblr()
-        #self.back_image = tumblr.get_fullbackground()
         pass
 
     def get(self):

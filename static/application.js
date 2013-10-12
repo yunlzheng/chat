@@ -84,13 +84,12 @@ $(function(){
 
         });
 
-        // TODO: BUG
+
         //ctrl+Enter发送信息
-        $("#textInput").keyup(function(e){
+        $("body").delegate('.chatInput', 'keyup', function(e){
 
             if(e.ctrlKey && e.which == 13 || e.which == 10) { // Ctrl+Enrer(回车)
-                 //需要执行的代码
-                $("#btnSend").click();
+                $(this).prev().click();
             }
 
         });

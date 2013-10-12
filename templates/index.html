@@ -12,11 +12,11 @@
     </script>
   </head>
   <body>
-    {% if background %}
-    <div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url({{ background }});">
-        <!--<img id="fullscreen_post_image" src="{{ background }}" alt="Posted by neaq">-->
+    <div id="fullscreen_post_bg" class="fullscreen_post_bg">
+        <div id="fullscreen_bg_load">
+            <img src="/static/images/loading_s.gif">
+        </div>
     </div>
-    {% end %}
     <div id="container">
         <div id="chat" class="chatPanel normalPanel">
             <div class="content">
@@ -38,7 +38,7 @@
                         <div style="height: 400px; width: 100%; overflow-y: auto; overflow-x:hidden; position: relative;">
                             <div class="listContent">
                                 <div id="chatMember" class="conversationContainer">
-                                    <div id="chat-all" class="chatListColumn" target="#all">
+                                    <div id="chat-all" class="chatListColumn active" target="#all" data-target="groups">
                                             <div class="avatar_wrap"><img class="avatar" src="/static/images/groups.png"></div>
                                             <div class="info">
                                                 <div class="nickName">
@@ -47,23 +47,10 @@
                                                 <div class="descWrapper">
                                                     <p class="desc">一起聊才开心</p>
                                                 </div>
+
                                             </div>
+                                            <span class="label label-info" style="display:none">0</span>
                                     </div>
-                                    {% for client in clients %}
-                                        <div id="{{ client.id }}" class="chatListColumn" target="#chat-{{ client.id }}">
-
-                                            <div class="avatar_wrap"><img class="avatar" src="{{ client.avatar }}"></div>
-                                            <div class="info">
-                                                <div class="nickName">
-                                                    <div class="left name" style="">{{ client.nickname }}</div>
-                                                </div>
-                                                <div class="descWrapper">
-                                                    <p class="desc">{{ client.email }}</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    {% end %}
                                 </div>
                             </div>
                         </div>
@@ -139,10 +126,13 @@
                     </div>
             </div>
         </div>
+        <audio id="audio-notification">
+            <source src="/static/mp3/notification.mp3" type="audio/mpeg"/>
+        </audio>
     </div>
 
     <script type="text/template" id="tpl_chatcontainer">
-        <div id="{0}" class="chatContainer" style="display:none">
+        <div id="{0}" class="chatContainer" data-main="{3}" style="display:none">
             <div class="chatTitle">
                 <h2>{1}</h2>
             </div>
@@ -162,7 +152,7 @@
     </script>
 
     <script type="text/template" id="tpl_chatmember">
-        <div id="{3}" class="chatListColumn" target="#chat-{4}">
+        <div id="{3}" class="chatListColumn" target="#chat-{4}" data-target="{5}">
             <div class="avatar_wrap"><img class="avatar" src="{0}"></div>
             <div class="info">
                 <div class="nickName">
@@ -172,6 +162,7 @@
                     <p class="desc">{2}</p>
                 </div>
             </div>
+            <span class="label label-info" style="display:none">0</span>
         </div>
     </script>
 

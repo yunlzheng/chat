@@ -21,7 +21,6 @@ class Tumblr(object):
         return BeautifulSoup(content)
 
     def _getItem(self, soup):
-        imgSrcPattern = r'''<img\s*src\s*="?(\S+)"?'''
         imgList = soup.findAll('img')
         img = imgList[0]
         pattern=re.compile(r"""<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?>""",re.I)

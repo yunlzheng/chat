@@ -26,6 +26,10 @@ html, body {
 
 }
 
+#fullscreen_bg_load{
+    margin-top: 20px;
+}
+
 /**Login Page Style*/
 #loginContainer{
     height: 100%;

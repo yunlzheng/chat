@@ -41,6 +41,10 @@ html, body {
 
 }
 
+#fullscreen_bg_load{
+    margin-top: 20px;
+}
+
 .chatPanel {
     position: relative;
     margin: 0 auto;
@@ -91,6 +95,7 @@ html, body {
     float: left;
     padding-top: 7px;
     margin-left: 60px;
+
 }
 
 .chatPanel .top .myProfile img{
@@ -101,6 +106,7 @@ html, body {
     top: -18px;
     left: 10px;
     border: 2px solid #DDD;
+    background-color: #FFF;
 }
 
 .chatPanel .listContentWrap{
@@ -133,6 +139,26 @@ html, body {
     background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(238, 238, 238));
 }
 
+.chatPanel .active{
+
+    background-image: none;
+    background-color: #FFF;
+    box-shadow: 0px 0px 2px #fff inset;
+    border-left: 6px solid #1798EE;
+
+}
+
+.chatPanel .chatListColumn:hover {
+    background-image: none;
+    background-color: #FFF;
+}
+
+
+.chatPanel .chatListColumn:active {
+    background-image: none;
+    background-color: #DDD;
+}
+
 .chatPanel .chatListColumn .avatar_wrap {
     line-height: 0;
     float: left;
@@ -153,6 +179,8 @@ html, body {
 .chatPanel .chatListColumn .info {
     overflow: hidden;
     text-shadow: none;
+    float: left;
+    width: 180px;
 }
 
 .chatPanel .chatListColumn .nickName {
@@ -167,7 +195,8 @@ html, body {
 
 .chatPanel .chatListColumn .descWrapper {
     overflow: hidden;
-    display: none;
+    width: 150px;
+    font-size: 12px;
 }
 
 .chatPanel .chat {
@@ -424,4 +453,32 @@ a.chatSend b {
 
 .icon-off:hover{
     box-shadow: 0px 0px 2px #fff;
+}
+
+.label{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #FFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999;
+}
+
+.label-warning, .badge-warning {
+    background-color: #F89406;
+}
+
+.label-success, .badge-success {
+    background-color: #468847;
+}
+
+.label-info{
+    background-color: #3a87ad;
 }

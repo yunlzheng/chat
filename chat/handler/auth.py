@@ -1,22 +1,19 @@
 # coding: utf-8
-import urllib2
-from sgmllib import SGMLParser
 import tornado.web
 from chat.handler import BaseHandler
 from chat.define import ChatSigletonDefine
-from chat.util.tumblr import Tumblr
 
 
 class AuthHandler(BaseHandler):
 
-
     def initialize(self):
-        tumblr = Tumblr()
-        self.back_image = tumblr.get_fullbackground()
+        pass
 
     def get(self):
-
-        self.render("login.html", error=None, background = self.back_image)
+        if self.get_current_user():
+            self.redirect("/chat");
+        else:
+            self.render("login.html", error=None)
 
     def post(self):
         nickname = self.get_argument("nickname")

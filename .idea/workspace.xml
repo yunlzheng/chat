@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1048e927-3adc-4613-abf1-80753471c22d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/core/manager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat.jpg" afterPath="$PROJECT_DIR$/static/images/chat.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" afterPath="$PROJECT_DIR$/static/images/chat_bottombar_icon_face.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/loading.gif" afterPath="$PROJECT_DIR$/static/images/loading.gif" />
@@ -67,79 +68,7 @@
     <favorites_list name="chat" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="listener.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/model/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="40" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="893">
-              <folding>
-                <element signature="e#16#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="673" max-vertical-offset="1235">
-              <folding>
-                <element signature="e#16#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tumblr.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/handler/tumblr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="307" selection-end="307" vertical-scroll-proportion="0.20284697" vertical-offset="171" max-vertical-offset="912">
-              <folding>
-                <element signature="e#16#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/model/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -157,11 +86,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/chat/router.py" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/static/login.js" />
-        <option value="$PROJECT_DIR$/chat/handler/message.py" />
         <option value="$PROJECT_DIR$/chat/core/listener.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/static/application.js" />
@@ -173,6 +100,8 @@
         <option value="$PROJECT_DIR$/chat/model/client.py" />
         <option value="$PROJECT_DIR$/chat/util/gavatar.py" />
         <option value="$PROJECT_DIR$/chat/handler/auth.py" />
+        <option value="$PROJECT_DIR$/chat/core/manager.py" />
+        <option value="$PROJECT_DIR$/chat/handler/message.py" />
       </list>
     </option>
   </component>
@@ -214,6 +143,48 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="chat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -444,7 +415,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -498,20 +469,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="2886" selection-end="3314" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="2470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="20" selection-start="4517" selection-end="4517" vertical-scroll-proportion="0.0" vertical-offset="3544" max-vertical-offset="9291">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="1681" selection-end="1681" vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="2622">
@@ -556,32 +513,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/model/client.py">
+    <entry file="file://$PROJECT_DIR$/chat/handler/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+        <state line="7" column="8" selection-start="114" selection-end="114" vertical-scroll-proportion="0.2366548" vertical-offset="0" max-vertical-offset="562">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="24" selection-start="947" selection-end="947" vertical-scroll-proportion="0.8451957" vertical-offset="171" max-vertical-offset="912">
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/tumblr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+        <state line="16" column="37" selection-start="461" selection-end="461" vertical-scroll-proportion="0.40569395" vertical-offset="0" max-vertical-offset="562">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1235">
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/handler/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="40" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="893">
+        <state line="33" column="40" selection-start="1023" selection-end="1023" vertical-scroll-proportion="1.1156584" vertical-offset="0" max-vertical-offset="893">
           <folding>
             <element signature="e#16#27#0" expanded="true" />
           </folding>
@@ -595,27 +552,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat/model/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="69" selection-start="125" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/1976821730/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2144" column="8" selection-start="73891" selection-end="73973" vertical-scroll-proportion="0.33274022" vertical-offset="40549" max-vertical-offset="96368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chat/core/listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
+        <state line="34" column="0" selection-start="960" selection-end="960" vertical-scroll-proportion="1.1352314" vertical-offset="8" max-vertical-offset="1539">
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/base.py">
+    <entry file="file://$PROJECT_DIR$/chat/handler/message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="114" selection-end="114" vertical-scroll-proportion="0.2366548" vertical-offset="0" max-vertical-offset="562">
+        <state line="4" column="31" selection-start="120" selection-end="120" vertical-scroll-proportion="0.13523132" vertical-offset="0" max-vertical-offset="1254">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/handler/auth.py">
+    <entry file="file://$PROJECT_DIR$/chat/core/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="307" selection-end="307" vertical-scroll-proportion="0.20284697" vertical-offset="171" max-vertical-offset="912">
+        <state line="22" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="0.15480427" vertical-offset="331" max-vertical-offset="893">
           <folding>
-            <element signature="e#16#34#0" expanded="true" />
+            <element signature="e#16#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

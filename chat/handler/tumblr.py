@@ -15,8 +15,7 @@ class TumblrHandler(BaseHandler):
         http_response = yield http_client.fetch("https://www.tumblr.com/")
         content = http_response.body
         soup = BeautifulSoup(content)
-        imgList = soup.findAll('img')
-        img = imgList[0]
+        img = soup.findAll('img')[0]
         pattern=re.compile(r"""<img\s.*?\s?src\s*=\s*['|"]?([^\s'"]+).*?>""",re.I)
         m = pattern.findall(str(img))
         self.write(m[0])

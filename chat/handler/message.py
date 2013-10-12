@@ -6,6 +6,7 @@ from tornado.log import app_log
 from chat.model import Client
 from chat.define import ChatSigletonDefine
 
+
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
     def open(self):
@@ -28,7 +29,8 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
                 "type": "add",
                 "id": key,
                 "nickname": client.nickname,
-                "avatar": client.avatar
+                "avatar": client.avatar,
+                "email": client.email
             })
         self.send_to_all(json.dumps(data))
 

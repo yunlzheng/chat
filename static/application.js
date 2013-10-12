@@ -31,6 +31,7 @@ $(function(){
         var tpl_chatcontainer = $("#tpl_chatcontainer").html()
             .replace("{0}", "all")
             .replace("{1}", "群聊中")
+            .replace("{3}", 'groups');
         $("#chat_containers").empty().append(tpl_chatcontainer)
         $("#all").fadeIn(500);
 
@@ -48,11 +49,14 @@ $(function(){
         //用户列表点击处理
         $("#chatMember").delegate(".chatListColumn","click", function(){
 
-            var target = $(this).attr("target");
+            var target = $(this).attr("data-target");
             if(target!=undefined){
-                var _class = $(target).attr("class")
-                $("."+_class).hide();
-                $(target).fadeIn(500);
+
+                var $target = $(".chatContainer[data-main='"+target+"']");
+                var _class = $target.attr("class")
+                $("."+_class).hide();//隐藏其他面板
+                $target.fadeIn(500);
+                
             }
 
         });
@@ -106,8 +110,10 @@ $(function(){
             var $input = $(this).find('input')
             var message = $textarea.val()
             var to = $input.val();
+            var to_email = $(this).parents('.chatContainer').attr('data-main');
             to = to=='{2}'?'':to;
-            $.post("./chat", { data: message, to: to }, function(data){
+            to_email = to_email=='{3}'?'':to_email;
+            $.post("./chat", { data: message, to: to ,to_mail: to_email}, function(data){
                 $("#data").val('');
             });
             $textarea.val("");

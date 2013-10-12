@@ -23,6 +23,18 @@ $(function(){
     (function(){
 
          $("form").submit(function(){
+            var email = $("#input_email").val();
+            var nickname = $("#input_nickname").val();
+            if($.trim(email)==''){
+                $("#client_message").html('邮箱地址不能为空！').parent().show();
+                return false;
+            }
+
+            if($.trim(nickname)==''){
+                $("#client_message").html('昵称不能为空！').parent().show();
+                return false;
+            }
+
             return true;
         });
 

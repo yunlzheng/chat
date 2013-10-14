@@ -1,7 +1,7 @@
 # coding: utf-8
 import tornado.web
 from chat.handler import BaseHandler
-from chat.define import ChatSigletonDefine
+from chat.core.manager import ClientManager
 
 
 class AuthHandler(BaseHandler):
@@ -18,10 +18,8 @@ class AuthHandler(BaseHandler):
     def post(self):
         nickname = self.get_argument("nickname")
         email = self.get_argument("email")
-        clients = ChatSigletonDefine.get_singleton_instance()._CLIENTS_MAP
-        for key in clients.keys():
-            if clients[key].email == email:
-                self.render("login.html", error="邮箱正在使用中...", background = None)
+        if ClientManager.get_client_by_email(email):
+            self.render("login.html", error="邮箱正在使用中...", background = None)
         self.set_secure_cookie('email', email)
         self.set_secure_cookie('nickname', nickname)
         self.redirect("/chat")
@@ -35,6 +33,7 @@ class LogoutHandler(BaseHandler):
         退出登录，清除当前cookie值
 
         """
+        # TODO: 用户退出登录后需关闭websocket连接
         self.clear_cookie("nickname")
         self.clear_cookie("email")
         self.redirect("/")

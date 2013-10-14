@@ -23,6 +23,7 @@ $(function(){
     (function(){
 
          $("form").submit(function(){
+            $("#server_message").remove();
             var email = $("#input_email").val();
             var nickname = $("#input_nickname").val();
             if($.trim(email)==''){

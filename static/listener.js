@@ -14,17 +14,14 @@ $(function(){
 
             }else{
 
-                console.log(data);
                 //显示未读消息的条数
-                var $target = $(".chatContainer[data-main='"+data.email+"']");
-
+                var $target = $(".chatContainer[data-main='"+data.from_email+"']");
                 if((data.to_email==current_user) && ($target.is(":visible")==false)){
 
-                    var $list_target = $(".chatListColumn[data-target='"+data.email+"']");
+                    var $list_target = $(".chatListColumn[data-target='"+data.from_email+"']");
                     var $info = $list_target.find('.label-info');
                     var num =parseInt( $info.html())+1;
                     $info.show().html(num);
-
 
                 }
 
@@ -56,13 +53,11 @@ $(function(){
                          notification.onclick=function(){
 
                              //页面显示聊天面板
-                             var $target = $(".chatContainer[data-main='"+data.email+"']");
-                             if(data.to==''){
-                                 $target = $(".chatContainer[data-main='groups']");
+                             var $target = $target = $(".chatListColumn[data-target='"+data.from_email+"']");
+                             if(data.to_email=='groups'){
+                                 $target = $(".chatListColumn[data-target='groups']");
                              }
-                             var _class = $target.attr("class")
-                             $("."+_class).hide();//隐藏其他面板
-                             $target.fadeIn(1000);
+                             $target.click();
                              //聚焦浏览器
                              $(window).focus();
 
@@ -111,26 +106,21 @@ $(function(){
                             .replace("{1}", obj.avatar)
                             .replace("{3}", obj.nickname)
 
-                    if(obj.email==current_user){
+                    var from_email = obj.from_email;
+                    var to_email = obj.to_email;
+
+                    if(from_email==current_user){
                         tpl = tpl.replace("{2}", "me")
                     }else{
                         tpl = tpl.replace("{2}", "you")
                     }
                     var $container = null;
-                    if( obj.from != undefined ){
 
-                        var to = obj.to
-                        var from_email = obj.email;//发送用户邮箱
+                    if( to_email != 'groups' ){
 
-                        //更新页面编号
-                        /*说明 如果是给我发送的消息，
-                         但是我当前的client编号和to编号不一致，
-                         则说明我刷新的页面,此时需要更新我的
-                       */
                         $container = $(".chatContainer[data-main='"+from_email+"']");
-
-                        if(obj.email==current_user){
-                            $container = $("#chat-" + to);
+                        if(from_email == current_user){
+                            $container = $(".chatContainer[data-main='"+to_email+"']");
                         }
 
                     }else{

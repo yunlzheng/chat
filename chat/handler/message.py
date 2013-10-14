@@ -15,11 +15,11 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         email = self.get_secure_cookie('email')
         nickname = self.get_secure_cookie('nickname')
         if ClientManager.is_client_connected(email):
-            pass
+            app_log.exception("client[{0}] already connected!".format(email))
         else:
             clients = ClientManager.get_clients()
             # 保存客户端信息
-            ClientManager.add_client(str(id(self)), nickname=nickname, email=email, websocket_handler=self)
+            ClientManager.add_client(str(id(self)), nickname=nickname, email=email, handler=self)
             data = {
                 'type': 'add',
                 'clients': []
@@ -28,7 +28,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
                 client = clients[key]
                 data['clients'].append({
                     "type": "add",
-                    "id": key,
+                    "id": client.identity,
                     "nickname": client.nickname,
                     "avatar": client.avatar,
                     "email": client.email
@@ -39,9 +39,9 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         print message
 
     def on_close(self):
-
+        email = self.get_secure_cookie('email')
         _id = str(id(self))
-        ClientManager.remove_client(_id)
+        ClientManager.remove_client(email)
         try:
             data = {
                 "type": "out",
@@ -52,7 +52,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
             app_log.exception(ex)
 
     def send_to_all(self, data):
-        ClientManager.send_to_all(self.settings['redis'], options.redis_channel, data)
+        ClientManager.publish(self.settings['redis'], options.redis_channel, data)
 
 
 

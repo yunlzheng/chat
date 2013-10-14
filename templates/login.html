@@ -22,8 +22,7 @@
             <div class="panelContent">
                 <form method="post">
                     {% if error %}
-                        <span class="label label-warning">{{ error }}</span>
-
+                        <span id="server_message" class="label label-warning">{{ error }}</span>
                     {% end %}
                     <div style="display:none">
                         <span id="client_message" class="label label-warning" ></span>

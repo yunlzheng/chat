@@ -3,8 +3,6 @@ $(function(){
     //#################### 消息提醒模块
     (function(){
 
-
-
         $(window).on('message', function(event, data){
 
             if(data.from_email==current_user){
@@ -32,8 +30,6 @@ $(function(){
                    $info.show().html(num);
 
                 }
-
-                 $(window).trigger('voice.normal');
 
                  //调用webkitNotifications
                  if(window.webkitNotifications){
@@ -68,6 +64,8 @@ $(function(){
 
                  }
 
+                $(window).trigger('voice.message');
+
             }
 
         });
@@ -88,18 +86,30 @@ $(function(){
 
             console.log(data);
             if(data.email!=current_user){
-                 $(window).trigger('voice.normal',null);
+                 $(window).trigger('voice.system',null);
             }
 
 
         });
-        $(window).on('voice.normal', function(event, data){
+        $(window).on('voice.system', function(event, data){
 
              //调用html5 audio播放提示音
              var hasVideo = !!(document.createElement('video').canPlayType);
              if(hasVideo==true){
                  //播放提示音
-                 var snd = new Audio("/static/mp3/notification.mp3"); // buffers automatically when created
+                 var snd = new Audio("/static/mp3/system.wav"); // buffers automatically when created
+                 snd.play();
+
+             }
+
+        });
+        $(window).on('voice.message', function(event, data){
+
+             //调用html5 audio播放提示音
+             var hasVideo = !!(document.createElement('video').canPlayType);
+             if(hasVideo==true){
+                 //播放提示音
+                 var snd = new Audio("/static/mp3/tweet.wav"); // buffers automatically when created
                  snd.play();
 
              }

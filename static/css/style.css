@@ -482,3 +482,18 @@ a.chatSend b {
 .label-info{
     background-color: #3a87ad;
 }
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    top:0px;
+    width:100%;
+    z-index: 100000;
+}

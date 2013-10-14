@@ -16,6 +16,12 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         nickname = self.get_secure_cookie('nickname')
         if ClientManager.is_client_connected(email):
             app_log.exception("client[{0}] already connected!".format(email))
+            self.write_message({
+
+                'type': 'system.error',
+                'message': '检测到当前用户已经打开一个窗口，当前窗口自动失效'
+
+            })
         else:
             clients = ClientManager.get_clients()
             # 保存客户端信息
@@ -41,15 +47,18 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
     def on_close(self):
         email = self.get_secure_cookie('email')
         _id = str(id(self))
-        ClientManager.remove_client(email)
-        try:
-            data = {
-                "type": "out",
-                "id": _id
-            }
-            self.send_to_all(json.dumps(data))
-        except Exception as ex:
-            app_log.exception(ex)
+        if ClientManager.is_effective_connect(_id):
+            ClientManager.remove_client(email)
+            try:
+                data = {
+                    "type": "out",
+                    "id": _id
+                }
+                self.send_to_all(json.dumps(data))
+            except Exception as ex:
+                app_log.exception(ex)
+        else:
+            app_log.info("非有效连接，关闭页面不影响其他已经打开的页面")
 
     def send_to_all(self, data):
         ClientManager.publish(self.settings['redis'], options.redis_channel, data)

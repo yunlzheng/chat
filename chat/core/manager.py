@@ -95,6 +95,14 @@ class ClientManager(object):
         redis.publish(channel, message)
 
     @classmethod
+    def is_effective_connect(cls, handlerid):
+        for key in cls._CLIENTS_MAP.keys():
+            client = cls._CLIENTS_MAP[key]
+            if client.identity == handlerid:
+                return True
+        return False
+
+    @classmethod
     def is_client_connected(cls, email):
         """
         检查当前连接的客户端是否已经打开了多个浏览器窗口

@@ -80,6 +80,18 @@ $(function(){
 
     })();
 
+    // ####################### 系统通知模块
+    (function(){
+        $(window).on('system.error', function(event, data){
+
+            var tpl_alert = $("#tpl_alert").html();
+            var template = tpl_alert.replace("{0}","")
+                .replace("{1}", data.message)
+            $("body").prepend(template);
+
+        });
+    })();
+
     //####################### websocket 消息处理
     (function(){
 
@@ -174,9 +186,16 @@ $(function(){
                     }
 
                 }else if(obj.type=='out'){
+
                     var select = "#"+obj.id;
                     $(select).fadeOut(1000).remove();
+
+                }else{
+
+                    $(window).trigger(obj.type, obj);
+
                 }
+
             }
 
         } else {

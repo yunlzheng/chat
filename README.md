@@ -1,5 +1,6 @@
 ## What Is Tornado WebChat
 
+[![Build Status](https://travis-ci.org/yunlzheng/chat.png?branch=master)](https://travis-ci.org/yunlzheng/chat)
 基于tornado websocket的web聊天应用,底层使用了redis的发布/订阅机制
 
 ## Browser Support

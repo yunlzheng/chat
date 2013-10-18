@@ -307,14 +307,13 @@ html, body {
     -moz-border-right-colors: none;
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
-    border-color: rgba(0, 0, 0, 0);
     border: 1px solid rgb(122, 162, 63);
     border-radius: 5px;
+    border-radius: 6px\9;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     box-shadow: 0px 1px 0px rgb(219, 219, 219);
     border: 1px solid #73972a\9;
-    border-radius: 6px\9;
     background-color: rgb(178, 207, 115);
     background: -webkit-gradient(linear, left top,left bottom, from(rgb(196, 222, 148)),to(rgb(164, 195, 99)), color-stop(0.1,rgb(180, 209, 116)),color-stop(0.2,rgb(178, 207, 115)), color-stop(0.3,rgb(178, 207, 115)), color-stop(0.4,rgb(178, 207, 115)), color-stop(0.5,rgb(178, 207, 115)),color-stop(0.6,rgb(175, 204, 116)), color-stop(0.7,rgb(171, 202, 108)),color-stop(0.8,rgb(174, 202, 114)), color-stop(0.9,rgb(169, 197, 114)),color-stop(1.0,rgb(164, 195, 99)));
     background-image: -moz-linear-gradient(top, #B4D174 10%, #B2CF7320%, #B2CF73 30%, #B2CF73 40%, #B2CF73 50%, #AFCC74 60%, #ABCA6C70%, #A9C572 80%, #AECA72 90%, #A4C363 100%);

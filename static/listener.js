@@ -84,7 +84,7 @@ $(function(){
         })
         $(window).on('add', function(event, data){
 
-            console.log(data);
+            //console.log(data);
             if(data.email!=current_user){
                  $(window).trigger('voice.system',null);
             }

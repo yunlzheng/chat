@@ -3,11 +3,9 @@ $(function(){
     //#################### 消息提醒模块
     (function(){
 
-        var snd = new Audio("/static/mp3/notification.mp3"); // buffers automatically when created
-
         $(window).on('message', function(event, data){
 
-            if(data.email==current_user){
+            if(data.from_email==current_user){
 
                 //自己的消息不提醒
                 return;
@@ -32,14 +30,6 @@ $(function(){
                    $info.show().html(num);
 
                 }
-
-                 //调用html5 audio播放提示音
-                 var hasVideo = !!(document.createElement('video').canPlayType);
-                 if(hasVideo==true){
-                     //播放提示音
-                     snd.play();
-
-                 }
 
                  //调用webkitNotifications
                  if(window.webkitNotifications){
@@ -74,6 +64,8 @@ $(function(){
 
                  }
 
+                $(window).trigger('voice.message');
+
             }
 
         });
@@ -89,7 +81,41 @@ $(function(){
                 .replace("{1}", data.message)
             $("body").prepend(template);
 
+        })
+        $(window).on('add', function(event, data){
+
+            //console.log(data);
+            if(data.email!=current_user){
+                 $(window).trigger('voice.system',null);
+            }
+
+
         });
+        $(window).on('voice.system', function(event, data){
+
+             //调用html5 audio播放提示音
+             var hasVideo = !!(document.createElement('video').canPlayType);
+             if(hasVideo==true){
+                 //播放提示音
+                 var snd = new Audio("/static/mp3/system.wav"); // buffers automatically when created
+                 snd.play();
+
+             }
+
+        });
+        $(window).on('voice.message', function(event, data){
+
+             //调用html5 audio播放提示音
+             var hasVideo = !!(document.createElement('video').canPlayType);
+             if(hasVideo==true){
+                 //播放提示音
+                 var snd = new Audio("/static/mp3/tweet.wav"); // buffers automatically when created
+                 snd.play();
+
+             }
+
+        });
+
     })();
 
     //####################### websocket 消息处理
@@ -151,7 +177,6 @@ $(function(){
                      * 当其他用户刷新页面后 会出现多个聊天面板  data-main='email'相同[修改判断参数为聊天面板email]
                      *
                      * */
-
                     for(var i=0;i<obj.clients.length;i++){
 
                         //更新用户列表项
@@ -166,6 +191,8 @@ $(function(){
                                 .replace("{3}", client.id)
                                 .replace("{4}", client.id)
                                 .replace("{5}", client.email);
+
+                            $(window).trigger(obj.type, client);
                             $("#chatMember").append(tpl_chatmember)
                         }
 
@@ -187,6 +214,7 @@ $(function(){
 
                 }else if(obj.type=='out'){
 
+                    $(window).trigger(obj.type, obj);
                     var select = "#"+obj.id;
                     $(select).fadeOut(1000).remove();
 

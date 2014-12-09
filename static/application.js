@@ -72,7 +72,7 @@ $(function(){
         $("body").on('click', '.btn_face', function(e){
 
             var xx = (e.pageX || e.clientX + document.body.scrollLeft)-290;
-            var yy = (e.pageY || e.clientY + document.boyd.scrollTop)-155;
+            var yy = (e.pageY || e.clientY + document.body.scrollTop)-155;
             $("#emoji_face").css("top",yy).css("left",xx).toggle();
 
         });
